@@ -50,9 +50,9 @@ could be in the form of the following:
 | ------------- |:-------------:|
 | argoprod@us.ibm.com | IBM |
 | aws-k8s-embargo-notification@amazon.com | AWS |
-| bphilips@redhat.com | Kubernetes PST |
-| brandon@ifup.org | Kubernetes PST |
-| cjcullen@google.com | Kubernetes PST |
+| bphilips@redhat.com | Kubernetes PSC |
+| brandon@ifup.org | Kubernetes PSC |
+| cjcullen@google.com | Kubernetes PSC |
 | k8s_security_grp@oracle.com | Oracle |
 | kops-security-response@googlegroups.com | Kops |
 | kubernetes-security-disclosure@google.com | Google |
@@ -61,16 +61,16 @@ could be in the form of the following:
 | kubernetes-security@service.aliyun.com | Aliyun |
 | kubernetes-security@service.microsoft.com | Microsoft |
 | kubernetes-security@weave.works | WeaveWorks |
-| liggitt@google.com | Kubernetes PST |
-| me@jessfraz.com | Kubernetes PST |
+| liggitt@google.com | Kubernetes PSC |
+| me@jessfraz.com | Kubernetes PSC |
 | mke-security@mesosphere.com | Mesosphere |
 | secalert@redhat.com | Red Hat |
 | secure@sap.com | SAP |
-| security-release-team@kubernetes.io | Kubernetes PST |
-| security@kubernetes.io | Kubernetes PST |
+| security-release-team@kubernetes.io | Kubernetes PSC |
+| security@kubernetes.io | Kubernetes PSC |
 | security@rancher.com | Rancher |
 | security@vmware.com | VMware |
-| stclair@google.com | Kubernetes PST |
+| stclair@google.com | Kubernetes PSC |
 | upstream-security@heptio.com | Heptio |
 | vulnerabilityreports@cloudfoundry.org | Cloud Foundry |
 
@@ -97,7 +97,7 @@ distribution should:
 **Removal**: If your distribution stops meeting one or more of these criteria
 after joining the list then you will be unsubscribed.
 
-### Requesting to Join
+### Request to Join
 
 New membership requests are sent to security@kubernetes.io
 
@@ -163,7 +163,7 @@ distribution.
 
 > 10. Link to PR updating this document with your email in the membership table.
 
-https://github.com/kubernetes/sig-release/edit/master/security-release-process-documentation/private-distributors-list.md
+https://github.com/kubernetes/security/edit/master/private-distributors-list.md
 ```
 
 

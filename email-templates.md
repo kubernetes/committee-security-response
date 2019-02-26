@@ -1,6 +1,6 @@
 # Kubernetes Security Process Email Templates
 
-This is a collection of email templates to handle various situations the PST needs to handle.
+This is a collection of email templates to handle various situations the PSC needs to handle.
 
 ## Security Fix Announcement
 
@@ -39,7 +39,7 @@ Thank you to $REPORTER, $DEVELOPERS, and the $RELEASEMANAGERS for the coordinati
 
 Thank You,
 
-$PERSON on behalf of the Kubernetes Product Security Team
+$PERSON on behalf of the Kubernetes Product Security Committee
 
 
 ## Distributor List Removal
@@ -48,7 +48,7 @@ Subject: Kubernetes Disclosure List Removal Due to Uncertified Status
 
 Hello $MEMBER-
 
-The [Kubernetes Product Security Team][pst] has removed $EMAIL from the distributors-announce@kubernetes.io Google Group.
+The [Kubernetes Product Security Committee][psc] has removed $EMAIL from the distributors-announce@kubernetes.io Google Group.
 
 This is because $PRODUCT is no longer a [certified Kubernetes Distribution][conformance], a requirement for membership to this list.
 
@@ -56,9 +56,9 @@ If $PRODUCT recertifies, and meets all other criteria, please submit a [request 
 
 Thank You,
 
-$PERSON on behalf of the Kubernetes Product Security Team
+$PERSON on behalf of the Kubernetes Product Security Committee
 
-[pst]: https://github.com/kubernetes/sig-release/blob/master/security-release-process-documentation/security-release-process.md#product-security-team-pst
+[psc]: https://github.com/kubernetes/security/blob/master/security-release-process.md#product-security-committee-psc
 [conformance]: https://www.cncf.io/certification/software-conformance/
-[criteria]: https://github.com/kubernetes/sig-release/blob/master/security-release-process-documentation/security-release-process.md#membership-criteria
-[join-process]: https://github.com/kubernetes/sig-release/blob/master/security-release-process-documentation/security-release-process.md#private-distributors-list
+[criteria]: https://github.com/kubernetes/security/blob/master/private-distributors-list.md#membership-criteria
+[join-process]: https://github.com/kubernetes/security/blob/master/private-distributors-list.md#request-to-join

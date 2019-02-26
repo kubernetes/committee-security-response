@@ -5,10 +5,10 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
 
 **Table of Contents**
 
-- [Product Security Team (PST)](#product-security-team-pst)
-  * [Product Security Team Membership](#product-security-team-membership)
+- [Product Security Committee (PSC)](#product-security-committee-psc)
+  * [Product Security Committee Membership](#product-security-committee-membership)
     + [Joining](#joining)
-      - [PST Lazy Consensus Selection](#pst-lazy-consensus-selection)
+      - [PSC Lazy Consensus Selection](#psc-lazy-consensus-selection)
     + [Stepping Down](#stepping-down)
     + [Responsibilities](#responsibilities)
     + [Roles](#roles)
@@ -63,13 +63,13 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
     + [High Value Asset](#high-value-asset)
     + [Service Failure](#service-failure)
 
-## Product Security Team (PST)
+## Product Security Committee (PSC)
 
 Security vulnerabilities should be handled quickly and sometimes privately. The primary goal of this process is to reduce the total time users are vulnerable to publicly known exploits.
 
-The Product Security Team (PST) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
+The Product Security Committee (PSC) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
 
-The initial Product Security Team will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list. These are the people who have been involved in the initial discussion and volunteered:
+The initial Product Security Committee will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list. These are the people who have been involved in the initial discussion and volunteered:
 
 - Brandon Philips (**[@philips](https://github.com/philips)**) `<brandon.philips@coreos.com>` [4096R/154343260542DF34]
 - Jess Frazelle (**[@jessfraz](https://github.com/jessfraz)**) `<jess@linux.com>` [4096R/0x18F3685C0022BFF3]
@@ -85,29 +85,29 @@ The initial Product Security Team will consist of volunteers subscribed to the p
 
 ### Contacting the Team
 
-There are a number of contact points for the PST and release managers in charge of security releases. Please use the correct forum for the best and fastest response.
+There are a number of contact points for the PSC and release managers in charge of security releases. Please use the correct forum for the best and fastest response.
 
 | List or Group | Visibility | Uses |
 | ------------- | ---------- | ---- |
-| security@kubernetes.io | Private | Kubernetes security disclosures. This list is closely monitored and triaged by the PST. [See the disclosure guide for full details.](http://kubernetes.io/security) |
+| security@kubernetes.io | Private | Kubernetes security disclosures. This list is closely monitored and triaged by the PSC. [See the disclosure guide for full details.](http://kubernetes.io/security) |
 | [kubernetes-security-discuss Google Group](https://groups.google.com/forum/#!forum/kubernetes-security-discuss) | Public | Discussion about security disclosure handling, this document, and other updates. |
 | security-release-team@kubernetes.io | Private | Release manager private discussion. All members are subscribed to security@kubernetes.io. |
-| security-discuss-private@kubernetes.io | Private | PST private discussion. All members are subscribed to security@kubernetes.io |
+| security-discuss-private@kubernetes.io | Private | PSC private discussion. All members are subscribed to security@kubernetes.io |
 
-### Product Security Team Membership
+### Product Security Committee Membership
 
 #### Joining
 
-New potential members to the PST will first fill a minimum of a 3 month rotation in the [Associate](#Associate) role.
+New potential members to the PSC will first fill a minimum of a 3 month rotation in the [Associate](#Associate) role.
 
-These individuals will be nominated by individuals on steering committee, PST, or release manager lead and patch release manager.
+These individuals will be nominated by individuals on steering committee, PSC, or release manager lead and patch release manager.
 
-The PST has a goal to expand the PST to 7 members by end of year (2018) or
+The PSC has a goal to expand the PSC to 7 members by end of year (2018) or
 early 2019. [Please delete this when this has been done :)].
 
 Members will also abide by the [1/3 maximal representation policy like the steering committee](https://github.com/kubernetes/steering/blob/master/elections.md#maximal-representation).
 
-##### PST Lazy Consensus Selection
+##### PSC Lazy Consensus Selection
 
 Selection of new members from the associates will be done by lazy consensus.
 
@@ -128,7 +128,7 @@ Members may step down at anytime and propose a replacement from pool of eligible
 
 #### Roles
 
-Membership to the product security team is based on filling a specific role.
+Membership on the Product Security Committee is based on filling a specific role.
 These are defined below to make sure everyone "carries water".
 
 ##### Release/Project Manager
@@ -140,7 +140,7 @@ A rotating role so we can make sure everyone helps and no one is stuck constantl
 
 Makes sure the people who should be in "the know" (aka notified) are notified, also responds to issues that are not actually issues and lets the OP know that.
 This person is the escalation path for a bug if it is one.
-The on-call PST member should triage the request. If the on-call member is unavailable then it is first come first serve on the alert escalation.
+The on-call PSC member should triage the request. If the on-call member is unavailable then it is first come first serve on the alert escalation.
 
 ##### Infra
 
@@ -153,7 +153,7 @@ Handles public messaging around the bug. Documentation on how to upgrade. Change
 
 ##### Associate
 
-A role for those wishing to join the PST. They should not currently be a member
+A role for those wishing to join the PSC. They should not currently be a member
 of security@kubernetes.io. 
 
 Their rotation will involve the following:
@@ -187,17 +187,17 @@ The Kubernetes Community asks that all suspected vulnerabilities be privately an
 
 ### Public Disclosure Processes
 
-If you know of a publicly disclosed security vulnerability please IMMEDIATELY email [security@kubernetes.io](mailto:security@kubernetes.io) to inform the Product Security Team (PST) about the vulnerability so they may start the patch, release, and communication process.
+If you know of a publicly disclosed security vulnerability please IMMEDIATELY email [security@kubernetes.io](mailto:security@kubernetes.io) to inform the Product Security Committee (PSC) about the vulnerability so they may start the patch, release, and communication process.
 
-If possible the PST will ask the person making the public report if the issue can be handled via a private disclosure process. If the reporter denies the PST will move swiftly with the fix and release process. In extreme cases you can ask GitHub to delete the issue but this generally isn't necessary and is unlikely to make a public disclosure less damaging.
+If possible the PSC will ask the person making the public report if the issue can be handled via a private disclosure process. If the reporter denies the PSC will move swiftly with the fix and release process. In extreme cases you can ask GitHub to delete the issue but this generally isn't necessary and is unlikely to make a public disclosure less damaging.
 
 ## Patch, Release, and Public Communication
 
-For each vulnerability a member of the PST will volunteer to lead coordination
+For each vulnerability a member of the PSC will volunteer to lead coordination
 with the Fix Team, Release Managers and is responsible for sending disclosure
 emails to the rest of the community. This lead will be referred to as the Fix Lead.
 
-The role of Fix Lead should rotate round-robin across the PST.
+The role of Fix Lead should rotate round-robin across the PSC.
 
 All of the timelines below are suggestions and assume a Private Disclosure.
 The Fix Lead drives the schedule using their best judgment based on severity,
@@ -214,7 +214,7 @@ These steps should be completed within the first 24 hours of Disclosure.
 - The Fix Lead will work quickly to identify relevant engineers from the affected projects and packages and CC those engineers into the disclosure thread. This selected developers are the Fix Team. A best guess is to invite all assignees in the OWNERS file from the affected packages.
 - The Fix Lead will get the Fix Team access to private security repos in the kubernetes-security GitHub org to develop the fix.
 
-Note: The kubernetes-security GitHub org is co-owned and viewable by the PST and Kubernetes Release Managers. Management of the org is done by SIG Contributor Experience's [GitHub management subproject](https://github.com/kubernetes/community/tree/master/github-management).
+Note: The kubernetes-security GitHub org is co-owned and viewable by the PSC and Kubernetes Release Managers. Management of the org is done by SIG Contributor Experience's [GitHub management subproject](https://github.com/kubernetes/community/tree/master/github-management).
 
 ### Fix Development Process
 
@@ -234,7 +234,7 @@ With the Fix Development underway the Fix Lead needs to come up with an overall 
 
 - The Fix Lead will make a determination with the help of the Fix Team if an issue is critical enough to require early disclosure to distributors. Generally this Private Distributor Disclosure process should be reserved for remotely exploitable or privilege escalation issues. Otherwise, this process can be skipped.
 - The Fix Lead will email the patches to distributors-announce@kubernetes.io so distributors can prepare builds to be available to users on the day of the issue's announcement. Distributors should read about the [Private Distributors List](#private-distributors-list) to find out the requirements for being added to this list.
-- **What if a vendor breaks embargo?** The PST will assess the damage. The Fix Lead will make the call to release earlier or continue with the plan. When in doubt push forward and go public ASAP.
+- **What if a vendor breaks embargo?** The PSC will assess the damage. The Fix Lead will make the call to release earlier or continue with the plan. When in doubt push forward and go public ASAP.
 
 **Fix Release Day** (Completed within 1-21 days of Disclosure)
 
@@ -267,7 +267,7 @@ These steps should be completed 1-3 days after the Release Date. The retrospecti
 ## Severity Thresholds - How We Do Vulnerability Scoring
 
 The content presented below outlines basic criteria when considering the effect
-of bugs disclosed to the Product Security Team and their severity. These apply
+of bugs disclosed to the Product Security Committee and their severity. These apply
 mostly to items in "core" but could be abstractly applied to those in other
 repos as well.
 
