@@ -163,7 +163,7 @@ distribution.
 
 > 10. Link to PR updating this document with your email in the membership table.
 
-https://github.com/kubernetes/security/edit/master/private-distributors-list.md
+https://git.k8s.io/security/private-distributors-list.md
 ```
 
 
