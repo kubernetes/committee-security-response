@@ -105,7 +105,7 @@ These individuals will be nominated by individuals on steering committee, PSC, o
 The PSC has a goal to expand the PSC to 7 members by end of year (2018) or
 early 2019. [Please delete this when this has been done :)].
 
-Members will also abide by the [1/3 maximal representation policy like the steering committee](https://github.com/kubernetes/steering/blob/master/elections.md#maximal-representation).
+Members will also abide by the [1/3 maximal representation policy like the steering committee](https://git.k8s.io/steering/elections.md#maximal-representation).
 
 ##### PSC Lazy Consensus Selection
 
@@ -214,7 +214,7 @@ These steps should be completed within the first 24 hours of Disclosure.
 - The Fix Lead will work quickly to identify relevant engineers from the affected projects and packages and CC those engineers into the disclosure thread. This selected developers are the Fix Team. A best guess is to invite all assignees in the OWNERS file from the affected packages.
 - The Fix Lead will get the Fix Team access to private security repos in the kubernetes-security GitHub org to develop the fix.
 
-Note: The kubernetes-security GitHub org is co-owned and viewable by the PSC and Kubernetes Release Managers. Management of the org is done by SIG Contributor Experience's [GitHub management subproject](https://github.com/kubernetes/community/tree/master/github-management).
+Note: The kubernetes-security GitHub org is co-owned and viewable by the PSC and Kubernetes Release Managers. Management of the org is done by SIG Contributor Experience's [GitHub management subproject](https://git.k8s.io/community/github-management).
 
 ### Fix Development Process
 
@@ -279,9 +279,9 @@ but you can specifically think of `kube-apiserver` and `kubelet` being the main 
 "Server-side components" pertains to:
 
 - Components built from source in the `kubernetes` github organization and 
-  [all current organizations in use](https://github.com/kubernetes/community/blob/master/org-owners-guide.md#current-organizations-in-use)
+  [all current organizations in use](https://git.k8s.io/community/github-management/README.md#actively-used-github-organizations)
 - Container images under the `k8s.gcr.io` repository
-- Containers included in the [core addons directory](https://github.com/kubernetes/kubernetes/tree/master/cluster/addons)
+- Containers included in the [core addons directory](https://git.k8s.io/kubernetes/cluster/addons)
 
 The server classification is usually not appropriate when user interaction 
 is part of the exploitation process, those should fall under the

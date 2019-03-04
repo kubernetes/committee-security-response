@@ -58,7 +58,7 @@ Thank You,
 
 $PERSON on behalf of the Kubernetes Product Security Committee
 
-[psc]: https://github.com/kubernetes/security/blob/master/security-release-process.md#product-security-committee-psc
+[psc]: https://git.k8s.io/security/security-release-process.md#product-security-committee-psc
 [conformance]: https://www.cncf.io/certification/software-conformance/
-[criteria]: https://github.com/kubernetes/security/blob/master/private-distributors-list.md#membership-criteria
-[join-process]: https://github.com/kubernetes/security/blob/master/private-distributors-list.md#request-to-join
+[criteria]: https://git.k8s.io/security/private-distributors-list.md#membership-criteria
+[join-process]: https://git.k8s.io/security/private-distributors-list.md#request-to-join
