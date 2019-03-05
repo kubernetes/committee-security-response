@@ -73,6 +73,7 @@ could be in the form of the following:
 | stclair@google.com | Kubernetes PSC |
 | upstream-security@heptio.com | Heptio |
 | vulnerabilityreports@cloudfoundry.org | Cloud Foundry |
+| kubernetes-security-team@ml.ovh.net | OVH |
 
 ### Membership Criteria
 
