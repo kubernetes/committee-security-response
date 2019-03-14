@@ -75,6 +75,7 @@ could be in the form of the following:
 | vulnerabilityreports@cloudfoundry.org | Cloud Foundry |
 | security@platform9.com | Platform9 | 
 | security@gravitational.com | Gravitational |
+| kubernetes-security-team@ml.ovh.net | OVH |
 
 ### Membership Criteria
 
