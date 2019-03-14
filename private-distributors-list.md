@@ -74,6 +74,7 @@ could be in the form of the following:
 | upstream-security@heptio.com | Heptio |
 | vulnerabilityreports@cloudfoundry.org | Cloud Foundry |
 | security@platform9.com | Platform9 | 
+| security@gravitational.com | Gravitational |
 
 ### Membership Criteria
 
