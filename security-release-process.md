@@ -72,7 +72,6 @@ The Product Security Committee (PSC) is responsible for organizing the entire re
 The initial Product Security Committee will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list. These are the people who have been involved in the initial discussion and volunteered:
 
 - Brandon Philips (**[@philips](https://github.com/philips)**) `<brandon.philips@coreos.com>` [4096R/154343260542DF34]
-- Jess Frazelle (**[@jessfraz](https://github.com/jessfraz)**) `<jess@linux.com>` [4096R/0x18F3685C0022BFF3]
 - CJ Cullen (**[@cjcullen](https://github.com/cjcullen)**) `<cjcullen@google.com>`
 - Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<tallclair@google.com>` [4096R/0x5E6F2E2DA760AF51]
 - Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**) `<jordan@liggitt.net>` [4096R/0x39928704103C7229]
