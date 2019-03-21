@@ -15,7 +15,7 @@ A security issue was discovered in versions of $COMPONENT versions $OLDVERSION o
 
 Run `$COMPONENT version` and if it says $OLDVERSION or older you are running a vulnerable version.
 
-**How to I mitigate the vulnerability?**
+**How do I mitigate the vulnerability?**
 
 <!--
 [This is an optional section. Remove if there are no mitigations.]
