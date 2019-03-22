@@ -50,32 +50,26 @@ could be in the form of the following:
 | ------------- |:-------------:|
 | argoprod@us.ibm.com | IBM |
 | aws-k8s-embargo-notification@amazon.com | AWS |
-| bphilips@redhat.com | Kubernetes PSC |
-| brandon@ifup.org | Kubernetes PSC |
-| cjcullen@google.com | Kubernetes PSC |
 | k8s_security_grp@oracle.com | Oracle |
 | kops-security-response@googlegroups.com | Kops |
 | kubernetes-security-disclosure@google.com | Google |
+| kubernetes-security-team@ml.ovh.net | OVH |
 | kubernetes-security@docker.com | Docker |
 | kubernetes-security@huawei.com | Huawei |
 | kubernetes-security@service.aliyun.com | Aliyun |
 | kubernetes-security@service.microsoft.com | Microsoft |
 | kubernetes-security@weave.works | WeaveWorks |
-| liggitt@google.com | Kubernetes PSC |
-| me@jessfraz.com | Kubernetes PSC |
 | mke-security@mesosphere.com | Mesosphere |
 | secalert@redhat.com | Red Hat |
 | secure@sap.com | SAP |
 | security-release-team@kubernetes.io | Kubernetes PSC |
+| security@gravitational.com | Gravitational |
 | security@kubernetes.io | Kubernetes PSC |
+| security@platform9.com | Platform9 |
 | security@rancher.com | Rancher |
 | security@vmware.com | VMware |
-| stclair@google.com | Kubernetes PSC |
 | upstream-security@heptio.com | Heptio |
 | vulnerabilityreports@cloudfoundry.org | Cloud Foundry |
-| security@platform9.com | Platform9 | 
-| security@gravitational.com | Gravitational |
-| kubernetes-security-team@ml.ovh.net | OVH |
 
 ### Membership Criteria
 
