@@ -97,9 +97,6 @@ after joining the list then you will be unsubscribed.
 
 ### Request to Join
 
-Open a Pull Request to add your organization to the membership table above. Use
-the [Distributors Application][distributors-app] template, and fill in the
-membership criteria. Once the PR is approved, a Product Security Committee
-member will add the alias to the email list.
-
-[distributors-app]: https://github.com/kubernetes/kubernetes/pull/new/master?template=distributors-application.md
+File an issue
+[here](https://github.com/kubernetes/security/issues/new?template=distributors-application.md),
+filling in the criteria template.
