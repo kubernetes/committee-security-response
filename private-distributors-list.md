@@ -51,6 +51,7 @@ could be in the form of the following:
 | argoprod@us.ibm.com | IBM |
 | aws-k8s-embargo-notification@amazon.com | AWS |
 | k8s_security_grp@oracle.com | Oracle |
+| k8s-security@suse.de | SUSE |
 | kops-security-response@googlegroups.com | Kops |
 | kubernetes-security-disclosure@google.com | Google |
 | kubernetes-security-team@ml.ovh.net | OVH |
