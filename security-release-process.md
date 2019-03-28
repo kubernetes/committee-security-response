@@ -80,7 +80,7 @@ The initial Product Security Committee will consist of volunteers subscribed to 
 [Associate](#Associate) members include:
 
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
-- Jonathan Pulsifer (**[@jonpulsifer](https://github.com/jonpulsifer)**) `<jonathan@pulsifer.ca>`
+- Jonathan Pulsifer (**[@jonpulsifer](https://github.com/jonpulsifer)**) `<jonathan.pulsifer@shopify.com>`
 
 ### Contacting the Team
 
