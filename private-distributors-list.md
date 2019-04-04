@@ -97,71 +97,9 @@ after joining the list then you will be unsubscribed.
 
 ### Request to Join
 
-New membership requests are sent to security@kubernetes.io
+Open a Pull Request to add your organization to the membership table above. Use
+the [Distributors Application][distributors-app] template, and fill in the
+membership criteria. Once the PR is approved, a Product Security Committee
+member will add the alias to the email list.
 
-In the body of your request please specify how you qualify and fulfill each
-criterion listed in [Membership Criteria](#membership-criteria).
-
-Here is a psuedo example:
-
-```
-To: security@kubernetes.io
-Subject: Seven-Corp Membership to distributors-announce@kubernetes.io
-
-Below are each criterion and why I think we, Seven-Corp, qualify.
-
-> 0. Have an actively monitored security alias email for our project.
-
-Yes, please subscribe kubernetes-security-team@example.com to the distributor's
-announce list.
-
-> 1. Be an actively maintained distribution of kubernetes components.
-
-We distribute the "Seven" distribution of kubernetes [link]. We have been doing
-this since 1999 before containers were even cool.
-
-> 2. Have a user base not limited to your own organization.
-
-Our user base spans of the extensive "Seven" community. We have a slack and
-GitHub repos and mailing lists where the community hangs out. [links]
-
-> 3. Have a publicly verifiable track record up to present day of fixing security
-   issues.
-
-We announce on our blog all upstream patches we apply to "Seven." [link to blog
-posts]
-
-> 4. Not be a downstream or rebuild of another distribution.
-
-This does not apply, "Seven" is a unique snowflake distribution.
-
-> 5. Be a participant and active contributor in the community.
-
-Our members, Acidburn, Cereal, and ZeroCool are outstanding members and are well
-known throughout the kubernetes community. Especially for their contributions
-in hacking the Gibson.
-
-> 6. Accept the Embargo Policy that is outlined above.
-
-We accept.
-
-> 7. Be willing to contribute back as outlined above.
-
-We are definitely willing to help!
-
-> 8. Be willing and able to handle PGP-encrypted email.
-
-Yes.
-
-> 9. Have someone already on the list vouch for the person requesting membership
-   on behalf of your distribution.
-
-CrashOverride will vouch for Acidburn joining the list on behalf of the "Seven"
-distribution.
-
-> 10. Link to PR updating this document with your email in the membership table.
-
-https://git.k8s.io/security/private-distributors-list.md
-```
-
-
+[distributors-app]: https://github.com/kubernetes/kubernetes/pull/new/master?template=distributors-application.md
