@@ -71,6 +71,7 @@ could be in the form of the following:
 | security@vmware.com | VMware |
 | upstream-security@heptio.com | Heptio |
 | vulnerabilityreports@cloudfoundry.org | Cloud Foundry |
+| test@example.com | brandon testing PR template |
 
 ### Membership Criteria
 
