@@ -225,6 +225,10 @@ These steps should be completed within the 1-7 days of Disclosure.
 
 If the CVSS score is under 4.0 ([a low severity score](https://www.first.org/cvss/specification-document#i5)) or the assessed risk is low the Fix Team can decide to slow the release process down in the face of holidays, developer bandwidth, etc. These decisions must be discussed on the security@kubernetes.io mailing list.
 
+If the CVSS score is under 7.0 (a medium severity score), the Fix Lead may choose to carry out the fix semi-publicly. This means that PRs are made directly in the public kubernetes/kubernetes repo, while restricting discussion of the security aspects to private channels. The fix lead will make the determination whether there would be user harm in handling the fix publicly that outweighs the benefits of open engagement with the community.
+
+If the vulnerability requires [User Interaction](https://www.first.org/cvss/user-guide#5-4-User-Interaction), especially in client components like kubectl, the Fix Lead may choose to disclose the vulnerability before a fix is developed if they determine that users would be better off being warned against a specific interaction.
+
 ### Fix Disclosure Process
 
 With the Fix Development underway the Fix Lead needs to come up with an overall communication plan for the wider community. This Disclosure process should begin after the Fix Team has developed a Fix or mitigation so that a realistic timeline can be communicated to users.
