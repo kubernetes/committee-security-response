@@ -223,7 +223,28 @@ These steps should be completed within the 1-7 days of Disclosure.
 - The Fix Lead will request a CVE from the [Kubernetes CVE Numbering Authority](cve-requests.md).
 - The Fix Team will notify the Fix Lead that work on the fix branch is complete once there are LGTMs on all commits in the private repo from one or more relevant assignees in the relevant OWNERS file.
 
-If the CVSS score is under 4.0 ([a low severity score](https://www.first.org/cvss/specification-document#i5)) or the assessed risk is low the Fix Team can decide to slow the release process down in the face of holidays, developer bandwidth, etc. These decisions must be discussed on the security@kubernetes.io mailing list.
+If the CVSS score is under ~4.0
+([a low severity score](https://www.first.org/cvss/specification-document#i5))
+or the assessed risk is low the Fix Team can decide to slow the release process
+down in the face of holidays, developer bandwidth, etc. These decisions must be
+discussed on the security@kubernetes.io mailing list.
+
+If the CVSS score is under ~7.0 (a medium severity score), the Fix Lead may
+choose to carry out the fix semi-publicly. This means that PRs are made directly
+in the public kubernetes/kubernetes repo, while restricting discussion of the
+security aspects to private channels. The fix lead will make the determination
+whether there would be user harm in handling the fix publicly that outweighs the
+benefits of open engagement with the community.
+
+Note: CVSS is convenient but imperfect. Ultimately, the fix lead has discretion
+on classifying the severity of a vulnerability.
+
+No matter the CVSS score, if the vulnerability requires
+[User Interaction](https://www.first.org/cvss/user-guide#5-4-User-Interaction),
+especially in client components like kubectl, or otherwise has a
+straightforward, non-disruptive mitigation, the Fix Lead may choose to disclose
+the vulnerability before a fix is developed if they determine that users would
+be better off being warned against a specific interaction.
 
 ### Fix Disclosure Process
 
