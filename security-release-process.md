@@ -104,7 +104,7 @@ These individuals will be nominated by individuals on steering committee, PSC, o
 The PSC has a goal to expand the PSC to 7 members by end of year (2018) or
 early 2019. [Please delete this when this has been done :)].
 
-Members will also abide by the [1/3 maximal representation policy like the steering committee](https://git.k8s.io/steering/elections.md#maximal-representation).
+To encourage diversity members will also abide by a 1/2 maximal representation from any one company at any time. If representation changes due to job shifts or mergers then members are encouraged to grow the team or replace themselves through mentoring new members. Being overlimit should not continue for longer than 12 months to give time to identify and mentor new members.
 
 ##### PSC Lazy Consensus Selection
 
