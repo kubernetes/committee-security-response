@@ -81,6 +81,8 @@ The initial Product Security Committee will consist of volunteers subscribed to 
 
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
 - Jonathan Pulsifer (**[@jonpulsifer](https://github.com/jonpulsifer)**) `<jonathan.pulsifer@shopify.com>`
+- Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@redhat.com`
+- Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
 
 ### Contacting the Team
 
