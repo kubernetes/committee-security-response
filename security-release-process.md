@@ -12,7 +12,7 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
     + [Stepping Down](#stepping-down)
     + [Responsibilities](#responsibilities)
     + [Roles](#roles)
-      - [Release/Project Manager](#release-project-manager)
+      - [Release/Project Manager](#releaseproject-manager)
       - [Triage](#triage)
       - [Infra](#infra)
       - [Disclosure](#disclosure)
@@ -30,7 +30,7 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
   * [Fix Disclosure Process](#fix-disclosure-process)
   * [Retrospective](#retrospective)
 - [Private Distributors List](#private-distributors-list)
-- [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds-how-we-do-vulnerability-scoring)
+- [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring)
   * [Server](#server)
     + [Critical](#critical)
       - [Elevation of privilege](#elevation-of-privilege)
@@ -219,7 +219,7 @@ Note: The kubernetes-security GitHub org is co-owned and viewable by the PSC and
 
 These steps should be completed within the 1-7 days of Disclosure.
 
-- The Fix Lead and the Fix Team will create a [CVSS](https://www.first.org/cvss/specification-document) using the [CVSS Calculator](https://www.first.org/cvss/calculator/3.0). They will also use the [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds-how-we-do-vulnerability-scoring) to determine the effect and severity of the bug. The Fix Lead makes the final call on the calculated risk; it is better to move quickly than make the perfect assessment.
+- The Fix Lead and the Fix Team will create a [CVSS](https://www.first.org/cvss/specification-document) using the [CVSS Calculator](https://www.first.org/cvss/calculator/3.0). They will also use the [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring) to determine the effect and severity of the bug. The Fix Lead makes the final call on the calculated risk; it is better to move quickly than make the perfect assessment.
 - The Fix Lead will request a CVE from the [Kubernetes CVE Numbering Authority](cve-requests.md).
 - The Fix Team will notify the Fix Lead that work on the fix branch is complete once there are LGTMs on all commits in the private repo from one or more relevant assignees in the relevant OWNERS file.
 
