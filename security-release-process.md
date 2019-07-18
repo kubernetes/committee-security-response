@@ -69,7 +69,7 @@ Security vulnerabilities should be handled quickly and sometimes privately. The 
 
 The Product Security Committee (PSC) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
 
-The initial Product Security Committee will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list. 
+The Product Security Committee will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list. 
 
 ### Product Security Committee Membership
 
