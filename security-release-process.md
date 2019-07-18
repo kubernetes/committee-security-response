@@ -69,31 +69,7 @@ Security vulnerabilities should be handled quickly and sometimes privately. The 
 
 The Product Security Committee (PSC) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
 
-The initial Product Security Committee will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list. These are the people who have been involved in the initial discussion and volunteered:
-
-- Brandon Philips (**[@philips](https://github.com/philips)**) `<bphilips@redhat.com>` [4096R/154343260542DF34]
-- CJ Cullen (**[@cjcullen](https://github.com/cjcullen)**) `<cjcullen@google.com>`
-- Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<tallclair@google.com>` [4096R/0x5E6F2E2DA760AF51]
-- Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**) `<jordan@liggitt.net>` [4096R/0x39928704103C7229]
-- Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>`
-- Jonathan Pulsifer (**[@jonpulsifer](https://github.com/jonpulsifer)**) `<jonathan.pulsifer@shopify.com>`
-
-[Associate](#Associate) members include:
-
-- Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
-- Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@redhat.com`
-- Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
-
-### Contacting the Team
-
-There are a number of contact points for the PSC and release managers in charge of security releases. Please use the correct forum for the best and fastest response.
-
-| List or Group | Visibility | Uses |
-| ------------- | ---------- | ---- |
-| security@kubernetes.io | Private | Kubernetes security disclosures. This list is closely monitored and triaged by the PSC. [See the disclosure guide for full details.](http://kubernetes.io/security) |
-| [kubernetes-security-discuss Google Group](https://groups.google.com/forum/#!forum/kubernetes-security-discuss) | Public | Discussion about security disclosure handling, this document, and other updates. |
-| security-release-team@kubernetes.io | Private | Release manager private discussion. All members are subscribed to security@kubernetes.io. |
-| security-discuss-private@kubernetes.io | Private | PSC private discussion. All members are subscribed to security@kubernetes.io |
+The initial Product Security Committee will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list. 
 
 ### Product Security Committee Membership
 
