@@ -270,6 +270,7 @@ With the Fix Development underway the Fix Lead needs to come up with an overall 
   - kubernetes-security-announce@googlegroups.com
   - [#announcements slack channel](https://kubernetes.slack.com/messages/C9T0QMNG4)
   - [discuss.kubernetes.io](https://discuss.kubernetes.io/c/announcements) forum
+  - In a tracking issue opened in https://github.com/kubernetes/kubernetes/issues, labeled with `area/security`, and prefixed with the associated CVE ID (if applicable)
 - The Fix Lead will remove the Fix Team from the private security repo.
 
 ## Private Distributors List
