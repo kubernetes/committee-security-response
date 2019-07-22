@@ -20,7 +20,7 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
     + [Per-Issue Assignment Options](#per-issue-assignment-options)
       - [Scheduled Rotation](#scheduled-rotation)
       - [Queue](#queue)
-    + [Release Manager Role](#release-manager-role)
+    + [SIG Release Roles](#sig-release-roles)
 - [Disclosures](#disclosures)
   * [Private Disclosure Processes](#private-disclosure-processes)
   * [Public Disclosure Processes](#public-disclosure-processes)
@@ -150,11 +150,16 @@ Each week has a primary & secondary for each role. If something comes up that we
 
 Each role has an ordered list of “who’s handling the next issue.” If something comes up, top of the list takes it. If we can’t contact them, or they have a good reason not to, we go down the list. We’d probably need some coordination of vacation schedules to make sure we don’t leave a role unstaffed.
 
-#### Release Manager Role
+#### SIG Release Roles
 
-Also included on the private [Security Release Team](https://groups.google.com/a/kubernetes.io/forum/#!forum/security-release-team) list are all [Release Managers](/release-managers.md).
+Also included on the private [Security Release Team](https://groups.google.com/a/kubernetes.io/forum/#!forum/security-release-team) list are the [Patch Release Team](https://git.k8s.io/sig-release/release-managers.md#patch-release-team) members, who manage build and release aspects when a security fix must be delivered.
 
-It is the responsibility of the Release Managers to add and remove people from the Security Release Team group as Kubernetes minor releases created and deprecated.
+It is the responsibility of the [SIG Release Chairs](https://git.k8s.io/sig-release/release-managers.md#SIG-Release-Chairs) to curate and maintain individual's memberships in the various release role access controls across release cycles.
+
+There are a number of other associated build and release roles which are not explicitly in the private security release team, but are also involved in delivery and must abide by the private disclosure process:
+
+- [Branch Managers](https://git.k8s.io/sig-release/release-managers.md#Branch-Managers)
+- [Build Admins](https://git.k8s.io/sig-release/release-managers.md#Build-Admins)
 
 ## Disclosures
 
