@@ -26,7 +26,7 @@ There are a number of contact points for the PSC and release managers in charge 
 | ------------- | ---------- | ---- |
 | security@kubernetes.io | Private | Kubernetes security disclosures. This list is closely monitored and triaged by the PSC. [See the disclosure guide for full details.](http://kubernetes.io/security) |
 | [kubernetes-security-discuss Google Group](https://groups.google.com/forum/#!forum/kubernetes-security-discuss) | Public | Discussion about security disclosure handling, this document, and other updates. |
-| security-release-team@kubernetes.io | Private | Release manager private discussion. All members are subscribed to security@kubernetes.io. |
+| release-managers-private@kubernetes.io | Private | Release Managers private discussion. All members are subscribed to security@kubernetes.io. |
 | security-discuss-private@kubernetes.io | Private | PSC private discussion. All members are subscribed to security@kubernetes.io |
 
 ## Community, discussion, contribution, and support

@@ -63,7 +63,7 @@ could be in the form of the following:
 | mke-security@mesosphere.com | Mesosphere |
 | secalert@redhat.com | Red Hat |
 | secure@sap.com | SAP |
-| security-release-team@kubernetes.io | Kubernetes PSC |
+| release-managers-private@kubernetes.io | Kubernetes Release Managers |
 | security@gravitational.com | Gravitational |
 | security@kubernetes.io | Kubernetes PSC |
 | security@platform9.com | Platform9 |
