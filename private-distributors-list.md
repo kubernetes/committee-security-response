@@ -45,34 +45,9 @@ could be in the form of the following:
 
 ### Membership
 
-
-| Email		| Organization	|
-| ------------- |:-------------:|
-| argoprod@us.ibm.com | IBM |
-| aws-k8s-embargo-notification@amazon.com | AWS |
-| k8s_security_grp@oracle.com | Oracle |
-| k8s-security@suse.de | SUSE |
-| kops-security-response@googlegroups.com | Kops |
-| kubernetes-security-disclosure@google.com | Google |
-| kubernetes-security-team@ml.ovh.net | OVH |
-| kubernetes-security@docker.com | Docker |
-| kubernetes-security@huawei.com | Huawei |
-| kubernetes-security@service.aliyun.com | Aliyun |
-| kubernetes-security@service.microsoft.com | Microsoft |
-| kubernetes-security@weave.works | WeaveWorks |
-| mke-security@mesosphere.com | Mesosphere |
-| secalert@redhat.com | Red Hat |
-| secure@sap.com | SAP |
-| release-managers-private@kubernetes.io | Kubernetes Release Managers |
-| security@gravitational.com | Gravitational |
-| security@kubernetes.io | Kubernetes PSC |
-| security@platform9.com | Platform9 |
-| security@rancher.com | Rancher |
-| security@vmware.com | VMware |
-| upstream-security@heptio.com | Heptio |
-| vulnerabilityreports@cloudfoundry.org | Cloud Foundry |
-| security@ubuntu.com | Canonical |
-| security@loodse.com | Loodse |
+Group membership is managed through the Kubernetes domain group administration
+configuration: http://git.k8s.io/k8s.io/groups/groups.yaml, under the
+`distributors-announce` section.
 
 ### Membership Criteria
 
