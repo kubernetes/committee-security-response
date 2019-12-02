@@ -1,4 +1,8 @@
-Subject: Kubernetes Disclosure List Removal Due to Uncertified Status
+TO: `$MEMBER_EMAIL`
+CC: `security-discuss-private@kubernetes.io`
+SUBJECT: `Kubernetes Disclosure List Removal Due to Uncertified Status`
+
+---
 
 Hello $MEMBER-
 
