@@ -81,8 +81,7 @@ New potential members to the PSC will first fill a minimum of a 3 month rotation
 
 These individuals will be nominated by individuals on steering committee, PSC, or release manager lead and patch release manager.
 
-The PSC has a goal to expand the PSC to 7 members by end of year (2018) or
-early 2019. [Please delete this when this has been done :)].
+The PSC has a goal to have at least 7 members.
 
 To encourage diversity members will also abide by a 1/2 maximal representation from any one company at any time. If representation changes due to job shifts or mergers then members are encouraged to grow the team or replace themselves through mentoring new members. Being overlimit should not continue for longer than 12 months to give time to identify and mentor new members.
 
