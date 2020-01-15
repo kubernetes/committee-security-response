@@ -69,7 +69,7 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
 
 Security vulnerabilities should be handled quickly and sometimes privately. The primary goal of this process is to reduce the total time users are vulnerable to publicly known exploits.
 
-The Product Security Committee (PSC) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
+The [Product Security Committee (PSC)](https://github.com/kubernetes/security/blob/master/README.md#product-security-committee-psc) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
 
 The PSC will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list.
 
