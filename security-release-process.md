@@ -69,7 +69,7 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
 
 Security vulnerabilities should be handled quickly and sometimes privately. The primary goal of this process is to reduce the total time users are vulnerable to publicly known exploits.
 
-The [Product Security Committee (PSC)](https://github.com/kubernetes/security/blob/master/README.md#product-security-committee-psc) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
+The [Product Security Committee (PSC)](README.md#product-security-committee-psc) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
 
 The PSC will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list.
 
@@ -98,36 +98,26 @@ Members may step down at anytime and propose a replacement from pool of eligible
 
 #### Responsibilities
 
-- Members should remain active and responsive in their Roles.
+- Members should remain active and responsive, and participate in the [oncall rotation](psc-oncall.md).
 - Members taking an extended leave of 1 or more months should coordinate with other members to ensure the role is adequately staffed during the leave.
 - Members going on leave for 1-3 months may identify a temporary replacement.
 - Members of a role should remove any other members that have not communicated a leave of absence and either cannot be reached for more than 1 month or are not fulfilling their documented responsibilities for more than 1 month. This may be done through a super-majority vote of members.
 
+##### Incident Commander
 
-#### Roles
+One of the primary responsibilities of the PSC is to coordinate incident response when a
+vulnerability is discovered. The incident commander is repsonsible for coordinating all the
+different parts of the security release process (but not handling all those responsibilities
+themselves), and seeing the incident through to the end (or handing off).
 
-Membership on the Product Security Committee is based on filling a specific role.
-These are defined below to make sure everyone "carries water".
-
-##### Release/Project Manager
-
-Per issue, sees it through to the end. The sheep herder.
-A rotating role so we can make sure everyone helps and no one is stuck constantly with the sheep herding.
+The incident commander defaults to the current oncall, but may be handed off to other PSC members as
+needed.
 
 ##### Triage
 
-Makes sure the people who should be in "the know" (aka notified) are notified, also responds to issues that are not actually issues and lets the OP know that.
-This person is the escalation path for a bug if it is one.
-The on-call PSC member should triage the request. If the on-call member is unavailable then it is first come first serve on the alert escalation.
-
-##### Infra
-
-Making sure we can test the fixes appropriately. This person is the build cop.
-Who do you call when the cluster is not well or you gotta test something weird, or the release branch is all messed up? This person.
-
-##### Disclosure
-
-Handles public messaging around the bug. Documentation on how to upgrade. Changelog. Explaining to public the severity. Notifications of bugs sent to mailing lists etc. Requests CVEs.
+The current oncall is responsible for triaging incoming vulnerability reports (both through the bug
+bounty and email). For more details on the triage process, see [oncall
+workflow](psc-oncall.md).
 
 ##### Associate
 
@@ -140,16 +130,6 @@ Their rotation will involve the following:
     (often done because of reporter request, a low CVSS score, or design issue
     that requires long-term refactoring).
 - assisting in process improvements, bug bounty administration, audits, or other non-disclosure activities
-
-#### Per-Issue Assignment Options
-
-##### Scheduled Rotation
-
-Each week has a primary & secondary for each role. If something comes up that week, primary owns it. Secondary is there if we can't get a hold of the primary, or if primary has a really good reason why they can’t handle it.
-
-##### Queue
-
-Each role has an ordered list of “who’s handling the next issue.” If something comes up, top of the list takes it. If we can’t contact them, or they have a good reason not to, we go down the list. We’d probably need some coordination of vacation schedules to make sure we don’t leave a role unstaffed.
 
 #### SIG Release Roles
 
