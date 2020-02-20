@@ -56,11 +56,39 @@ _TODO: Refine the definition of reward tiers._
 
 **3. File tracking issue**
 
-_TODO_
+Every non-public issue that we decide to take action on should get filed as a
+GitHub issue in the https://github.com/kubernetes-security/security-disclosures
+repo.
 
-Add the tracking issue as a reference ID.
+From the HackerOne report, you can use the [security-disclosures
+bookmarklet][bookmarklet] to copy the relevant information into an issue on
+https://github.com/kubernetes-security/security-disclosures/issues. Alternatively,
+or when filing from an email report, you can use the [new issue template][], and
+fill in the details manually.
+
+Fill in the known details of the template, including:
+
+- Assignee: yourself, or another PSC member who has volunteered to handle this
+  issue
+- Severity: according to the assigned severity score
+- CVE: most code vulnerabilities (not infrastructure vulnerabilities) should
+  have an assigned CVE.
+- Original report: link back to the HackerOne report or google groups thread.
+- Current status: one of
+    - planning - preliminary response stages
+    - development - fix in progress
+    - embargo - fix complete, sent to distributors under embargo
+    - released - fix has shipped
+    - published - vulnerability details have been made public
+- Attribution: the original reporter
+
+Once the issue has been created, add the tracking issue as a reference ID on
+HackerOne.
 
 ![Set the HackerOne issue reference](images/psc-oncall-h1-triage-references.png)
+
+[bookmarklet]: https://github.com/kubernetes-security/security-disclosures#hackerone-issue-escalation
+[new issue template]: https://github.com/kubernetes-security/security-disclosures/issues/new?template=vulnerability.md
 
 **4. Award bounty**
 
