@@ -51,10 +51,10 @@ repository first and only once approved by means of the pull request being
 merged, should pull requests be approved / merged in the `kubernetes/community`
 repository, and the user added to the mailing lists and ACLs.
 
-##### file: https://github.com/kubernetes/security/blob/master/security-release-process.md
+##### file: https://github.com/kubernetes/security/blob/master/README.md
 
-Add / remove the PSC member(s) github name from `community/sig-list.md`
-to the existing `committee-product-security` field, according to the usernames
+Add / remove the PSC member(s) github name from `security/README.md`
+to the appropriate list of committee members, according to the usernames
 alphabetical placing.
 
 If adding a PSC member, you will also need to remove the associate role:
@@ -62,8 +62,10 @@ If adding a PSC member, you will also need to remove the associate role:
 ```
 The initial Product Security Committee will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list. These are the people who have been involved in the initial discussion and volunteered:
 
-- Jane Doe (**[@philips](https://github.com/jdoe)**) `<jdoe@acme.com>` [GPG_KEY]
+- Jane Doe (**[@jdoe](https://github.com/jdoe)**) `<jdoe@acme.com>` [GPG_KEY]
 ```
+
+If removing a PSC member, move them to the list of emeritus members.
 
 ##### file: https://github.com/kubernetes/security/blob/master/OWNERS_ALIASES
 
@@ -76,6 +78,20 @@ aliases:
   product-security-committee:
     - jdoe
 ```
+
+#### kubernetes/k8s.io repository
+
+##### file: https://github.com/kubernetes/k8s.io/blob/master/groups/groups.yaml
+
+`groups.yaml` is the source of truth for membership to the
+product-security-committee mailing lists. Update the `owners` field for the
+following lists:
+
+- `security@kubernetes.io`
+- `security-discuss-private@kubernetes.io`
+- `distributors-announce@kubernetes.io`
+
+Ensure the 3 lists match.
 
 #### kubernetes/community repository
 
@@ -103,9 +119,19 @@ This will then automatically create the following files:
 * kubernetes/community/committee-product-security/README.md
 * kubernetes/community/sig-list.md
 
-####  Add/remove from Hackerone
+####  Add/remove from HackerOne
 
-<Section TBD>
+To add or remove members from the Kubernetes HackerOne project, navigate to
+https://hackerone.com/kubernetes/team_members
+
+Click `Remove` next to a member to remove.
+
+Click `Invite user` to add a new PSC member. Add them to the `Kubernetes Team`,
+`Standard` and `Admin` groups.
+
+We also request that new members enable 2-factor auth. Once they've accepted the
+invitation, you can verify the status in the `2FA` column on the user management
+page.
 
 
 ####  Add/remove from OpsGenie rotation
@@ -157,19 +183,25 @@ To downgrade existing owners to members:
 
 | Mailing List | URL|
 | ------------- | ------------- |
-| Security | https://groups.google.com/a/kubernetes.io/forum/#!forum/security |
 | Security Discuss | https://groups.google.com/forum/#!forum/kubernetes-security-discuss |
-| Security Discuss (Private) | https://groups.google.com/a/kubernetes.io/forum/#!forum/security-discuss-private |
 | Security Announce | https://groups.google.com/forum/#!forum/kubernetes-security-announce |
-| Distributors Announce | https://groups.google.com/a/kubernetes.io/forum/#!forum/distributors-announce |
 | Kubernetes Announce | https://groups.google.com/forum/#!forum/kubernetes-announce |
 | Kubernetes Dev | https://groups.google.com/forum/#!topic/kubernetes-dev |
+
+_Note: the @kubernetes.io addresses are now managed through `groups.yaml`_
 
 #### Discuss Account
 
 A verified [discuss account](https://discuss.kubernetes.io/) is required.
 
-#### Kubernetes Security Disclosure Github Issue Access
+#### kubernetes-security github org
 
-Finally the new PSC member should be granted Github Access rights to the
-security disclosure repository.
+Update the kubernetes-security github org team members for the additions or
+removals.
+
+Navigate to https://github.com/orgs/kubernetes-security/people, and invite new
+members or remove existing members. Note that several non-PSC members have
+access to this org (primarily release managers).
+
+Once a new PSC member has accepted the invite, they should be granted `Owner`
+permissions.

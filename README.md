@@ -18,6 +18,10 @@ The Product Security Committee (PSC) is responsible for triaging and handling th
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
 - Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
 
+Emeritus members:
+- Jess Frazelle (**[@jessfraz](https://github.com/jessfraz)**) `<jess@linux.com>`
+
+
 ### Contacting the PSC
 
 There are a number of contact points for the PSC and release managers in charge of security releases. Please use the correct forum for the best and fastest response.
