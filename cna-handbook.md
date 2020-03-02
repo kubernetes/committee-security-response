@@ -15,7 +15,10 @@
 
 The following members of the Product Security Committee have completed CNA training and can request/assign/publish CVEs for the Kubernetes CNA:
 
+- Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>`
 - Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**) `<jordan@liggitt.net>` [4096R/0x39928704103C7229]
+- Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
+- Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<tallclair@google.com>` [4096R/0x5E6F2E2DA760AF51]
 
 ## References
 
@@ -23,6 +26,8 @@ CNA documents are hosted by MITRE at https://cve.mitre.org/about/documents.html#
 
 * CNA onboarding guides: https://cveproject.github.io/docs/cna/onboarding/index.html
 * CNA Rules: https://cve.mitre.org/cve/cna/rules.html
+
+A walkthrough of this handbook is also available in [video form](https://youtu.be/pcmAaEP7HD4).
 
 ## Common CNA tasks
 
@@ -68,12 +73,12 @@ https://vulnogram.github.io/#editor is a useful tool for editing the CVE details
 but should only be used once the vulnerability has been made public.
 
 Fill in or update the relevant fields, including:
-* State: "PUBLIC"
-* Assigner: "security@kubernetes.io"
-* Title: "Kubernetes <component> <vulnerability>"
+* State: `PUBLIC`
+* Assigner: `security@kubernetes.io`
+* Title: `Kubernetes <component> <vulnerability>`
 * Affects: List historical minor versions affected and "prior to 1.x.y" patch versions affected
 * Credit: The vulnerability reporter's name
-* Description: "The Kubernetes <component> command/component in versions <affected versions> <vulnerability>"
+* Description: `The Kubernetes <component> command/component in versions <affected versions> <vulnerability>`
 * Impact: CVSS impact
 * Problem type: Select a problem type from https://cwe.mitre.org/data/definitions/699.html if applicable
 * References: Link to the Kubernetes github issue(s) (with type CONFIRM) and mailing list announcement (with type MLIST)
