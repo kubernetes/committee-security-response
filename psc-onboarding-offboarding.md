@@ -159,7 +159,7 @@ downgraded to member if they are leaving the PSC)
 To add members and assign the "owner" role:
 
 1. Visit the groups URL as a user authenticated as an existing "owner".
-2. Select the 'Manage group' or 'Manager Members' link.
+2. Select the 'Manage group' or 'Manage Members' link.
 3. Within the left side panel, select 'Direct add member'.
 4. Enter the new PSC members email address
 5. Select the 'All members' link, or search for the new member in the search box.
@@ -181,12 +181,12 @@ To downgrade existing owners to members:
 2. Select the 'All members' link, or search for the existing owner in the search box.
 3. Select the owner and change the drop down role to "Member".
 
-| Mailing List | URL|
-| ------------- | ------------- |
-| Security Discuss | https://groups.google.com/forum/#!forum/kubernetes-security-discuss |
-| Security Announce | https://groups.google.com/forum/#!forum/kubernetes-security-announce |
-| Kubernetes Announce | https://groups.google.com/forum/#!forum/kubernetes-announce |
-| Kubernetes Dev | https://groups.google.com/forum/#!topic/kubernetes-dev |
+| Mailing List        | URL                                                                  |
+| -------------       | -------------                                                        |
+| Security Discuss    | https://groups.google.com/forum/#!forum/kubernetes-security-discuss  |
+| Security Announce   | https://groups.google.com/forum/#!forum/kubernetes-security-announce |
+| Kubernetes Announce | https://groups.google.com/forum/#!forum/kubernetes-announce          |
+| Kubernetes Dev      | https://groups.google.com/forum/#!forum/kubernetes-dev (Member)      |
 
 _Note: the @kubernetes.io addresses are now managed through `groups.yaml`_
 
