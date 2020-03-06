@@ -6,17 +6,20 @@ Kubernetes Security Release Process and Security Committee documentation.
 
 The Product Security Committee (PSC) is responsible for triaging and handling the security issues for Kubernetes. Following are the current Product Security Committee members:
 
-- Brandon Philips (**[@philips](https://github.com/philips)**) `<bphilips@redhat.com>` [4096R/154343260542DF34]
 - CJ Cullen (**[@cjcullen](https://github.com/cjcullen)**) `<cjcullen@google.com>`
-- Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<tallclair@google.com>` [4096R/0x5E6F2E2DA760AF51]
-- Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**) `<jordan@liggitt.net>` [4096R/0x39928704103C7229]
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>`
-- Jonathan Pulsifer (**[@jonpulsifer](https://github.com/jonpulsifer)**) `<jonathan.pulsifer@shopify.com>`
+- Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**) `<jordan@liggitt.net>` [4096R/0x39928704103C7229]
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@redhat.com`
+- Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
+- Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<tallclair@google.com>`
 
 [Associate](security-release-process.md#associate) members include:
-- Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
 - Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
+
+Emeritus members:
+- Brandon Philips (**[@philips](https://github.com/philips)**) `<bphilips@redhat.com>`
+- Jess Frazelle (**[@jessfraz](https://github.com/jessfraz)**) `<jess@linux.com>`
+- Jonathan Pulsifer (**[@jonpulsifer](https://github.com/jonpulsifer)**) `<jonathan.pulsifer@shopify.com>`
 
 ### Contacting the PSC
 
