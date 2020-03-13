@@ -17,11 +17,29 @@ rotation](#appendix-managing-oncall-rotation).
 
 ## Responsibilities
 
-- Triage HackerOne reports daily. See [HackerOne
-  Workflow](#hackerone-triage-details).
-- Triage and respond to security@kubernetes.io emails daily.
-- Handle incident response for ongoing issues. See [incident
-  response](#incident-response-workflow).
+Daily:
+
+- Triage HackerOne reports ([query](https://hackerone.com/bugs?subject=kubernetes&view=k8s_triage))
+  - See [HackerOne Workflow](#hackerone-triage-details) for details
+
+- Triage and respond to security@kubernetes.io emails ([query](https://kubernetes.app.opsgenie.com/alert/list))
+
+- Handle incident response for ongoing issues
+  - Drive progress on assigned issues ([query](https://github.com/kubernetes-security/security-disclosures/issues/assigned/@me))
+    - See [incident response](#incident-response-workflow) for details
+  - Ping incident commander of critical issues
+    ([query](https://github.com/kubernetes-security/security-disclosures/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-asc+label%3Aseverity%2Fcritical))
+    if last update > 2 days ago
+
+Weekly (ideally at the beginning of your shift):
+
+- Ping incident commander of high severity issues
+  ([query](https://github.com/kubernetes-security/security-disclosures/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-asc+label%3Aseverity%2Fhigh))
+  if last update was > 7 days ago
+
+- Ping incident commander of medium severity issues
+  ([query](https://github.com/kubernetes-security/security-disclosures/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-asc+label%3Aseverity%2Fmedium))
+  if last update was > 1 month ago
 
 ## Triage Workflow
 
