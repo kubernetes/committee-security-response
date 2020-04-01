@@ -228,13 +228,13 @@ With the Fix Development underway the Fix Lead needs to come up with an overall 
 - The Fix Lead will cherry-pick the patches onto the master branch and all relevant release branches. The Fix Team will `/lgtm` and `/approve`.
 - The Release Managers will merge these PRs as quickly as possible. Changes shouldn't be made to the commits at this point, to prevent potential conflicts with the patches sent to distributors, and conflicts as the fix is cherry-picked around branches.
 - The Release Managers will ensure all the binaries are built, publicly available, and functional.
-- The Fix Lead will announce the new releases, the CVE number, severity, and impact, and the location of the binaries to get wide distribution and user action. As much as possible this announcement should be actionable, and include any mitigating steps users can take prior to upgrading to a fixed version. The recommended target time is 4pm UTC on a non-Friday weekday. This means the announcement will be seen morning Pacific, early evening Europe, and late evening Asia. The announcement will be sent via the following channels:
+- Using the [announcement template](comms-templates/vulnerability-announcement-email.md), the Fix Lead will announce the new releases, the CVE number, severity, and impact, and the location of the binaries to get wide distribution and user action. As much as possible this announcement should be actionable, and include any mitigating steps users can take prior to upgrading to a fixed version. The recommended target time is 4pm UTC on a non-Friday weekday. This means the announcement will be seen morning Pacific, early evening Europe, and late evening Asia. The announcement will be sent via the following channels:
   - kubernetes-dev@googlegroups.com
   - kubernetes-announce@googlegroups.com
   - kubernetes-security-announce@googlegroups.com
   - [#announcements slack channel](https://kubernetes.slack.com/messages/C9T0QMNG4)
   - [discuss.kubernetes.io](https://discuss.kubernetes.io/c/announcements) forum
-  - In a tracking issue opened in https://github.com/kubernetes/kubernetes/issues, labeled with `area/security`, and prefixed with the associated CVE ID (if applicable)
+  - In a tracking issue opened in https://github.com/kubernetes/kubernetes/issues, labeled with `area/security`, and prefixed with the associated CVE ID (if applicable). Use the [issue template](comms-templates/vulnerability-announcement-issue.md) to help structure the issue.
 - The Fix Lead will remove the Fix Team from the private security repo.
 
 ## Private Distributors List
