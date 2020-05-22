@@ -73,18 +73,18 @@ These individuals will be nominated by individuals on steering committee, PSC, o
 
 The PSC has a goal to have at least 7 members.
 
-To encourage diversity members will also abide by a 1/2 maximal representation from any one company at any time. If representation changes due to job shifts or mergers then members are encouraged to grow the team or replace themselves through mentoring new members. Being overlimit should not continue for longer than 12 months to give time to identify and mentor new members.
+To encourage diversity members will also abide by a 1/2 maximal representation from any one company at any time. If representation changes due to job shifts or mergers, then members are encouraged to grow the team or replace themselves through mentoring new members. Being overlimit should not continue for longer than 12 months to give time to identify and mentor new members.
 
 ##### PSC Lazy Consensus Selection
 
 Selection of new members from the associates will be done by lazy consensus.
 
-- Use lazy consensus amongst members for adding new people up to 7 from pool of associate members with fallback on majority vote.
+- Use lazy consensus amongst members for adding new people up to 7 from the pool of eligible associate members with fallback on majority vote.
 - Use lazy consensus amongst other members with fallback on majority vote to accept proposal on step down.
 
 #### Stepping Down
 
-Members may step down at anytime and propose a replacement from pool of eligible associate members.
+Members may step down at anytime and propose a replacement from the pool of eligible associate members.
 
 #### Responsibilities
 
@@ -96,7 +96,7 @@ Members may step down at anytime and propose a replacement from pool of eligible
 ##### Incident Commander
 
 One of the primary responsibilities of the PSC is to coordinate incident response when a
-vulnerability is discovered. The incident commander is repsonsible for coordinating all the
+vulnerability is discovered. The incident commander is responsible for coordinating all the
 different parts of the security release process (but not handling all those responsibilities
 themselves), and seeing the incident through to the end (or handing off).
 
@@ -148,12 +148,12 @@ The Kubernetes Community asks that all suspected vulnerabilities be privately an
 
 If you know of a publicly disclosed security vulnerability please IMMEDIATELY email [security@kubernetes.io](mailto:security@kubernetes.io) to inform the Product Security Committee (PSC) about the vulnerability so they may start the patch, release, and communication process.
 
-If possible the PSC will ask the person making the public report if the issue can be handled via a private disclosure process. If the reporter denies the PSC will move swiftly with the fix and release process. In extreme cases you can ask GitHub to delete the issue but this generally isn't necessary and is unlikely to make a public disclosure less damaging.
+If possible the PSC will ask the person making the public report if the issue can be handled via a private disclosure process. If the reporter denies the request, the PSC will move swiftly with the fix and release process. In extreme cases you can ask GitHub to delete the issue but this generally isn't necessary and is unlikely to make a public disclosure less damaging.
 
 ## Patch, Release, and Public Communication
 
 For each vulnerability a member of the PSC will volunteer to lead coordination
-with the Fix Team, Release Managers and is responsible for sending disclosure
+with the Fix Team and Release Managers, and is responsible for sending disclosure
 emails to the rest of the community. This lead will be referred to as the Fix Lead.
 
 The role of Fix Lead should rotate round-robin across the PSC.
@@ -179,7 +179,7 @@ Note: The kubernetes-security GitHub org is co-owned and viewable by the PSC and
 
 These steps should be completed within the 1-7 days of Disclosure.
 
-- The Fix Lead and the Fix Team will create a [CVSS](https://www.first.org/cvss/specification-document) using the [CVSS Calculator](https://www.first.org/cvss/calculator/3.0). They will also use the [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring) to determine the effect and severity of the bug. The Fix Lead makes the final call on the calculated risk; it is better to move quickly than make the perfect assessment.
+- The Fix Lead and the Fix Team will create a [CVSS](https://www.first.org/cvss/specification-document) score using the [CVSS Calculator](https://www.first.org/cvss/calculator/3.0). They will also use the [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring) to determine the effect and severity of the bug. The Fix Lead makes the final call on the calculated risk; it is better to move quickly than make the perfect assessment.
 - The Fix Lead will request a CVE from the [Kubernetes CVE Numbering Authority](cve-requests.md).
 - The Fix Team will notify the Fix Lead that work on the fix branch is complete once there are LGTMs on all commits in the private repo from one or more relevant assignees in the relevant OWNERS file.
 
@@ -196,7 +196,9 @@ security aspects to private channels. The fix lead will make the determination
 whether there would be user harm in handling the fix publicly that outweighs the
 benefits of open engagement with the community.
 
-Note: CVSS is convenient but imperfect. Ultimately, the fix lead has discretion
+Critical and High severity vulnerability fixes will typically receive an out-of-band release. Medium and Low severity vulnerability fixes will be released as part of the next Kubernetes [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md). 
+
+Note: CVSS is convenient but imperfect. Ultimately, the Fix Lead has discretion
 on classifying the severity of a vulnerability.
 
 No matter the CVSS score, if the vulnerability requires
@@ -208,20 +210,19 @@ be better off being warned against a specific interaction.
 
 ### Fix Disclosure Process
 
-With the Fix Development underway the Fix Lead needs to come up with an overall communication plan for the wider community. This Disclosure process should begin after the Fix Team has developed a Fix or mitigation so that a realistic timeline can be communicated to users.
+With the Fix Development underway the Fix Lead needs to come up with an overall communication plan for the wider community. This Disclosure process should begin after the Fix Team has developed a Fix or mitigation so that a realistic timeline can be communicated to users. Emergency releases for critical and high severity issues or fixes for issues already made public may affect the below timelines for how quickly or far in advance notifications will occur.
 
-**Optional Fix Disclosure to Private Distributors List** (Completed within 1-14 days of Disclosure):
+**Advance Vulnerability Disclosure to Private Distributors List** (Completed within 1-14 days of Disclosure):
 
-- The Fix Lead will make a determination with the help of the Fix Team if an issue is critical enough to require early disclosure to distributors. Generally this Private Distributor Disclosure process should be reserved for remotely exploitable or privilege escalation issues. Otherwise, this process can be skipped.
-- The Fix Lead will email the patches to distributors-announce@kubernetes.io so distributors can prepare builds to be available to users on the day of the issue's announcement. Distributors should read about the [Private Distributors List](#private-distributors-list) to find out the requirements for being added to this list.
+- The [Private Distributors List](#private-distributors-list) will be given advance notification of any vulnerability that is assigned a CVE, at least 7 days before the planned public disclosure date. The notification will include all information that can be reasonably provided at the time of the notification. This may include patches or links to PRs, proofs of concept or instructions to reproduce the vulnerability, known mitigations, and timelines for public disclosure. Distributors should read about the [Private Distributors List](#private-distributors-list) to find out the requirements for being added to this list. 
 - **What if a vendor breaks embargo?** The PSC will assess the damage. The Fix Lead will make the call to release earlier or continue with the plan. When in doubt push forward and go public ASAP.
 
 **Fix Release Day** (Completed within 1-21 days of Disclosure)
 
-- The [Private Distributors List](#private-distributors-list) will be notified at least 24 hours in advance of a pending release with the public messaging, date, and time of the announcement.
 - The Fix Lead will cherry-pick the patches onto the master branch and all relevant release branches. The Fix Team will `/lgtm` and `/approve`.
 - The Release Managers will merge these PRs as quickly as possible. Changes shouldn't be made to the commits at this point, to prevent potential conflicts with the patches sent to distributors, and conflicts as the fix is cherry-picked around branches.
 - The Release Managers will ensure all the binaries are built, publicly available, and functional.
+- The [Private Distributors List](#private-distributors-list) will be notified at least 24 hours in advance of a pending release containing security vulnerability fixes with the public messaging, date, and time of the announcement.
 - The Fix Lead will announce the new releases, the CVE number, severity, and impact, and the location of the binaries to get wide distribution and user action. As much as possible this announcement should be actionable, and include any mitigating steps users can take prior to upgrading to a fixed version. The recommended target time is 4pm UTC on a non-Friday weekday. This means the announcement will be seen morning Pacific, early evening Europe, and late evening Asia. The announcement will be sent via the following channels:
   - kubernetes-dev@googlegroups.com
   - kubernetes-announce@googlegroups.com
@@ -229,6 +230,7 @@ With the Fix Development underway the Fix Lead needs to come up with an overall 
   - [#announcements slack channel](https://kubernetes.slack.com/messages/C9T0QMNG4)
   - [discuss.kubernetes.io](https://discuss.kubernetes.io/c/announcements) forum
   - In a tracking issue opened in https://github.com/kubernetes/kubernetes/issues, labeled with `area/security`, and prefixed with the associated CVE ID (if applicable)
+- Medium and Low severity vulnerability fixes that will be released as part of the next Kubernetes [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md) will have the fix details included in the patch release notes. Any public announcement sent for these fixes will link to the release notes.
 - The Fix Lead will remove the Fix Team from the private security repo.
 
 ## Private Distributors List
@@ -238,7 +240,7 @@ vendors at once.
 
 See the [private distributor list doc](private-distributors-list.md) for more information.
 
-### Retrospective
+## Retrospective
 
 These steps should be completed 1-3 days after the Release Date. The retrospective process [should be blameless](https://landing.google.com/sre/book/chapters/postmortem-culture.html).
 
