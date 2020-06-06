@@ -2,68 +2,58 @@
 
 Kubernetes is a large growing community of volunteers, users, and vendors. The Kubernetes community has adopted this security disclosures and response policy to ensure we responsibly handle critical issues.
 
-
-**Table of Contents**
-
-- [Security Release Process](#security-release-process)
-  - [Product Security Committee (PSC)](#product-security-committee-psc)
-    - [Product Security Committee Membership](#product-security-committee-membership)
-      - [Joining](#joining)
-        - [PSC Lazy Consensus Selection](#psc-lazy-consensus-selection)
-      - [Stepping Down](#stepping-down)
-      - [Responsibilities](#responsibilities)
-      - [Roles](#roles)
-        - [Release/Project Manager](#releaseproject-manager)
-        - [Triage](#triage)
-        - [Infra](#infra)
-        - [Disclosure](#disclosure)
-        - [Associate](#associate)
-      - [Per-Issue Assignment Options](#per-issue-assignment-options)
-        - [Scheduled Rotation](#scheduled-rotation)
-        - [Queue](#queue)
-      - [SIG Release Roles](#sig-release-roles)
-  - [Disclosures](#disclosures)
-    - [Private Disclosure Processes](#private-disclosure-processes)
-    - [Public Disclosure Processes](#public-disclosure-processes)
-  - [Patch, Release, and Public Communication](#patch-release-and-public-communication)
-    - [Fix Team Organization](#fix-team-organization)
-    - [Fix Development Process](#fix-development-process)
-    - [Fix Disclosure Process](#fix-disclosure-process)
-  - [Private Distributors List](#private-distributors-list)
-    - [Retrospective](#retrospective)
-  - [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring)
-    - [Server](#server)
-      - [Critical](#critical)
-        - [Elevation of privilege](#elevation-of-privilege)
-        - [Information disclosure (targeted)](#information-disclosure-targeted)
-      - [High](#high)
-        - [Denial of service](#denial-of-service)
-        - [Elevation of privilege](#elevation-of-privilege-1)
-        - [Information disclosure (targeted)](#information-disclosure-targeted-1)
-      - [Medium](#medium)
-        - [Information disclosure (targeted)](#information-disclosure-targeted-2)
-      - [Low](#low)
-        - [Tampering](#tampering)
-    - [Client](#client)
-      - [Critical](#critical-1)
-        - [Elevation of privilege](#elevation-of-privilege-2)
-        - [Information disclosure (targeted)](#information-disclosure-targeted-3)
-      - [High](#high-1)
-        - [Denial of service](#denial-of-service-1)
-        - [Elevation of privilege](#elevation-of-privilege-3)
-        - [Tampering](#tampering-1)
-      - [Medium](#medium-1)
-        - [Tampering](#tampering-2)
-      - [Low](#low-1)
-        - [Denial of service](#denial-of-service-2)
-        - [Tampering](#tampering-3)
-    - [Glossary](#glossary)
-      - [Adjacent Network Access](#adjacent-network-access)
-      - [Authenticated User](#authenticated-user)
-      - [Local Access](#local-access)
-      - [Remote Anonymous User](#remote-anonymous-user)
-      - [High Value Asset](#high-value-asset)
-      - [Service Failure](#service-failure)
+- [Product Security Committee (PSC)](#product-security-committee-psc)
+  - [Product Security Committee Membership](#product-security-committee-membership)
+    - [Joining](#joining)
+      - [PSC Lazy Consensus Selection](#psc-lazy-consensus-selection)
+    - [Stepping Down](#stepping-down)
+    - [Responsibilities](#responsibilities)
+      - [Incident Commander](#incident-commander)
+      - [Triage](#triage)
+      - [Associate](#associate)
+    - [SIG Release Roles](#sig-release-roles)
+- [Disclosures](#disclosures)
+  - [Private Disclosure Processes](#private-disclosure-processes)
+  - [Public Disclosure Processes](#public-disclosure-processes)
+- [Patch, Release, and Public Communication](#patch-release-and-public-communication)
+  - [Fix Team Organization](#fix-team-organization)
+  - [Fix Development Process](#fix-development-process)
+  - [Fix Disclosure Process](#fix-disclosure-process)
+- [Private Distributors List](#private-distributors-list)
+  - [Retrospective](#retrospective)
+- [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring)
+  - [Server](#server)
+    - [Critical](#critical)
+      - [Elevation of privilege](#elevation-of-privilege)
+      - [Information disclosure (targeted)](#information-disclosure-targeted)
+    - [High](#high)
+      - [Denial of service](#denial-of-service)
+      - [Elevation of privilege](#elevation-of-privilege-1)
+      - [Information disclosure (targeted)](#information-disclosure-targeted-1)
+    - [Medium](#medium)
+      - [Information disclosure (targeted)](#information-disclosure-targeted-2)
+    - [Low](#low)
+      - [Tampering](#tampering)
+  - [Client](#client)
+    - [Critical](#critical-1)
+      - [Elevation of privilege](#elevation-of-privilege-2)
+      - [Information disclosure (targeted)](#information-disclosure-targeted-3)
+    - [High](#high-1)
+      - [Denial of service](#denial-of-service-1)
+      - [Elevation of privilege](#elevation-of-privilege-3)
+      - [Tampering](#tampering-1)
+    - [Medium](#medium-1)
+      - [Tampering](#tampering-2)
+    - [Low](#low-1)
+      - [Denial of service](#denial-of-service-2)
+      - [Tampering](#tampering-3)
+  - [Glossary](#glossary)
+    - [Adjacent Network Access](#adjacent-network-access)
+    - [Authenticated User](#authenticated-user)
+    - [Local Access](#local-access)
+    - [Remote Anonymous User](#remote-anonymous-user)
+    - [High Value Asset](#high-value-asset)
+    - [Service Failure](#service-failure)
 
 ## Product Security Committee (PSC)
 
@@ -133,16 +123,20 @@ Their rotation will involve the following:
 
 #### SIG Release Roles
 
-Included on the [private Release Managers list](https://groups.google.com/a/kubernetes.io/forum/#!forum/release-managers-private) are the following members of Release Managers group:
-- [Patch Release Team](https://git.k8s.io/sig-release/release-managers.md#patch-release-team) members - manage build and release aspects when a security fix must be delivered
+Included on the [private Release Managers list](https://groups.google.com/a/kubernetes.io/forum/#!forum/release-managers-private)
+are the following members:
+
+- [Release Managers](https://git.k8s.io/sig-release/release-managers.md#release-managers)
+(manage build and release aspects when a security fix must be delivered)
 - [SIG Release Chairs](https://git.k8s.io/sig-release/release-managers.md#sig-release-chairs)
 
-It is the responsibility of the [SIG Release Chairs](https://git.k8s.io/sig-release/release-managers.md#SIG-Release-Chairs) to curate and maintain individual's memberships in the various release role access controls across release cycles.
+It is the responsibility of the [SIG Release Chairs](https://git.k8s.io/sig-release/release-managers.md#sig-release-chairs)
+to curate and maintain the various release role access controls across release cycles.
 
-There are a number of other associated build and release roles which are not explicitly in the private security release team, but are also involved in delivery and must abide by the private disclosure process:
-
-- [Branch Managers](https://git.k8s.io/sig-release/release-managers.md#Branch-Managers)
-- [Build Admins](https://git.k8s.io/sig-release/release-managers.md#Build-Admins)
+The [Build Admins](https://git.k8s.io/sig-release/release-managers.md#build-admins)
+(Googlers with access to build/publish Kubernetes deb/rpm packages) are not
+explicitly part of the private security release team, but are also involved in
+delivery and must abide by the private disclosure process.
 
 ## Disclosures
 
