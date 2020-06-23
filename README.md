@@ -16,6 +16,7 @@ The Product Security Committee (PSC) is responsible for triaging and handling th
 [Associate](security-release-process.md#associate) members include:
 - Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
 - Mo Khan (**[@enj](https://github.com/enj)**) `<mok@vmware.com>`
+- Sam Fowler (**[@sfowl](https://github.com/sfowl)**) `<sfowler@redhat.com>`
 
 Emeritus members:
 - Brandon Philips (**[@philips](https://github.com/philips)**) `<bphilips@redhat.com>`
