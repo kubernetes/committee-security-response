@@ -11,10 +11,10 @@ The Product Security Committee (PSC) is responsible for triaging and handling th
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>` [4096R/0x1688ADC79BECDDAF]
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@redhat.com`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
+- Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
 - Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<tallclair@google.com>`
 
 [Associate](security-release-process.md#associate) members include:
-- Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
 - Mo Khan (**[@enj](https://github.com/enj)**) `<mok@vmware.com>`
 - Sam Fowler (**[@sfowl](https://github.com/sfowl)**) `<sfowler@redhat.com>`
 
