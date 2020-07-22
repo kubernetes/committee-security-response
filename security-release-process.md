@@ -363,7 +363,7 @@ based on other considerations as documented here.
 
 Examples:
 - Disabling or bypassing a `NetworkPolicy` or `PodSecurityPolicy` without
-winforming users or gaining consent
+informing users or gaining consent
 - Reconfiguring a `NetworkPolicy` and allowing connections to other processes
 without consent
 
