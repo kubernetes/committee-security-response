@@ -312,7 +312,7 @@ not intended or designed to be exposed.
 #### High
 
 "Critical" attacks are downgraded to "High" when requiring
-[adjacent network access](adjacent-network-access).
+[adjacent network access](#adjacent-network-access).
 
 Non-default (or non-typical) critical scenarios or cases where
 mitigations exist that can help prevent critical scenarios.
