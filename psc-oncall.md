@@ -22,7 +22,8 @@ Daily:
 - Triage HackerOne reports ([query](https://hackerone.com/bugs?subject=kubernetes&view=k8s_triage))
   - See [HackerOne Workflow](#hackerone-triage-details) for details
 
-- Triage and respond to security@kubernetes.io emails ([query](https://kubernetes.app.opsgenie.com/alert/list))
+- Triage and respond to security@kubernetes.io emails. If needed, create a [security-disclosures issue](https://github.com/kubernetes-security/security-disclosures/issues).
+  It's a good idea to make sure that someone has responded to all recent threads. Threads are listed on [google groups](https://groups.google.com/a/kubernetes.io/forum/#!forum/security).
 
 - Handle incident response for ongoing issues
   - Drive progress on assigned issues ([query](https://github.com/kubernetes-security/security-disclosures/issues/assigned/@me))
@@ -40,6 +41,12 @@ Weekly (ideally at the beginning of your shift):
 - Ping incident commander of medium severity issues
   ([query](https://github.com/kubernetes-security/security-disclosures/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-asc+label%3Aseverity%2Fmedium))
   if last update was > 1 month ago
+
+- Check for new issues in this repository, especially distributor list join requests. Triage, assign or handle new issues, as appropriate.
+  ([query](https://github.com/kubernetes/security/issues))
+
+- Check for new PRs in this repository and address open PRs where possible
+  ([query](https://github.com/kubernetes/security/pulls))
 
 ## Triage Workflow
 
