@@ -50,10 +50,11 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
   - [Glossary](#glossary)
     - [Adjacent Network Access](#adjacent-network-access)
     - [Authenticated User](#authenticated-user)
+    - [High Value Asset](#high-value-asset)
     - [Local Access](#local-access)
     - [Remote Anonymous User](#remote-anonymous-user)
-    - [High Value Asset](#high-value-asset)
     - [Service Failure](#service-failure)
+    - [User Interaction](#user-interaction)
 
 ## Product Security Committee (PSC)
 
@@ -202,7 +203,7 @@ Note: CVSS is convenient but imperfect. Ultimately, the Fix Lead has discretion
 on classifying the severity of a vulnerability.
 
 No matter the CVSS score, if the vulnerability requires
-[User Interaction](https://www.first.org/cvss/user-guide#5-4-User-Interaction),
+[User Interaction](#user-interaction),
 especially in client components like kubectl, or otherwise has a
 straightforward, non-disruptive mitigation, the Fix Lead may choose to disclose
 the vulnerability before a fix is developed if they determine that users would
@@ -556,6 +557,12 @@ An authenticated user can be:
 - Unprivileged: authenticated, but with no privileges
 - Privileged: authenticated, with some privileges
 
+#### High Value Asset
+
+A mission critical component such that if/when it has failed the entire cluster
+is unusable. For example, if the master services/nodes are
+unreachable or in a failure mode, the entire cluster is basically unusable.
+
 #### Local Access
 
 On the same physical host (or VM).
@@ -567,13 +574,11 @@ externally exposed, public facing IP addresses.
 
 Anonymous implies the attacker requires no credentials or Authentication.
 
-#### High Value Asset
-
-A mission critical component such that if/when it has failed the entire cluster
-is unusable. For example, if the master services/nodes are
-unreachable or in a failure mode, the entire cluster is basically unusable.
-
 #### Service Failure
 
 Failure in such a way that the system/service requires intervention from
 a human operator to recover.
+
+#### User Interaction
+
+When evaluating vulnerabilities "user interaction" means that a user needs to be do something for exploitation of the vulnerability to succeed. This might be following a link, downloading a file, or in the case of Kubernetes it often means convincing a user to run a particular kubectl command or make an API call. In some cases the user action might occurr naturally and regularly in the course of that user's workflow, or it might be something unusual that the attacker has to convince them to do. Vulnerabilities that require users to do something unusual are typically less severe because it is harder for an attacker to pull off.
