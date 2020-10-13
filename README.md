@@ -17,8 +17,8 @@ The Product Security Committee (PSC) is responsible for triaging and handling th
 [Associate](security-release-process.md#associate) members include:
 - Mo Khan (**[@enj](https://github.com/enj)**) `<mok@vmware.com>`
 - Sam Fowler (**[@sfowl](https://github.com/sfowl)**) `<sfowler@redhat.com>`
-- Alex Tcherniakhovski (**[@immutableT](https://github.com/immutablet)**) `<alextc@google.com>`
 - Tabitha Sable (**[@tabbysable](https://github.com/tabbysable)**) `<tabitha.c.sable@gmail.com>`
+- Taahir Ahmed (**[@ahmedtd](https://github.com/ahmedtd)**) `<taahm@google.com>`
 
 Emeritus members:
 - Brandon Philips (**[@philips](https://github.com/philips)**) `<bphilips@redhat.com>`
