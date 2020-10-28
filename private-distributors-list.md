@@ -6,15 +6,18 @@ security issues.
 
 ### Embargo Policy
 
-The information members receive on distributors-announce@kubernetes.io must not be
-made public, shared, nor even hinted at anywhere beyond the need-to-know within
-your specific team except with the list's explicit approval. This holds
-true until the public disclosure date/time that was agreed upon by the list.
-Members of the list and others may not use the information for anything other
-than getting the issue fixed for your respective distribution's users.
+
+Members of distributors-announce@kubernetes.io must share list information only
+within their teams, on a need-to-know basis to get the related issue fixed in
+their distribution. The information members and others receive from the list must
+not be made public, shared, nor even hinted at otherwise, except with the list's
+explicit approval. (For example, this means that members who do not represent a
+distribution may not use list information to give "advance warning" to anyone.)
+This holds true until the public disclosure date/time that was agreed upon by
+the list.
 
 Before any information from the list is shared with respective members of your
-team required to fix said issue, they must agree to the same terms and only
+team required to fix an issue, they must agree to the same terms and only
 find out information on a need-to-know basis.
 
 In the unfortunate event you share the information beyond what is allowed by
