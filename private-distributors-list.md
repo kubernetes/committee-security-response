@@ -9,16 +9,18 @@ security issues.
 
 Members of distributors-announce@kubernetes.io must share list information only
 within their teams, on a need-to-know basis to get the related issue fixed in
-their distribution. The information members and others receive from the list must
-not be made public, shared, nor even hinted at otherwise, except with the list's
-explicit approval. (For example, this means that members who do not represent a
-distribution may not use list information to give "advance warning" to anyone.)
-This holds true until the public disclosure date/time that was agreed upon by
-the list.
+their distribution. The information members and others receive from the list
+must not be made public, shared, nor even hinted at otherwise, except with the
+list's explicit approval. This holds true until the public disclosure date/time
+that was agreed upon by the list.
 
 Before any information from the list is shared with respective members of your
 team required to fix an issue, they must agree to the same terms and only
 find out information on a need-to-know basis.
+
+As a clarifying example, this policy forbids PSC members (or others who don't
+work on a distribution) from sharing list information with their non-distributor
+employers.
 
 In the unfortunate event you share the information beyond what is allowed by
 this policy, you _must_ urgently inform the security@kubernetes.io
