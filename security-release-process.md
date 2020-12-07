@@ -228,6 +228,7 @@ With the Fix Development underway the Fix Lead needs to come up with an overall 
   - kubernetes-announce@googlegroups.com
   - kubernetes-security-announce@googlegroups.com
   - [#announcements slack channel](https://kubernetes.slack.com/messages/C9T0QMNG4)
+    - Request temporary permission to do this by joining #slack-admins and saying "I'm on the PSC and I need to make a security announcement on #announcements"
   - [discuss.kubernetes.io](https://discuss.kubernetes.io/c/announcements) forum
   - In a tracking issue opened in https://github.com/kubernetes/kubernetes/issues, labeled with `area/security`, and prefixed with the associated CVE ID (if applicable)
 - Medium and Low severity vulnerability fixes that will be released as part of the next Kubernetes [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md) will have the fix details included in the patch release notes. Any public announcement sent for these fixes will link to the release notes.
