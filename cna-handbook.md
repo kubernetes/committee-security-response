@@ -45,7 +45,7 @@ If a new CVE ID is needed to assign to a new issue, and reserved IDs for the cur
   * if you request too many, we have to update/reject them after the year ends
 * Additional information: Indicate the request is for the Kubernetes CNA
 
-Once the block of CVE IDs is received, add them to the [tracking sheet](https://docs.google.com/spreadsheets/d/178eqxFxShR0I2BeoZ-YUynYnl0fo_0oU0VfmVfBpAQ0/edit) as unassigned IDs for future assignment.
+Once the block of CVE IDs is received, add them to the [tracking sheet] as unassigned IDs for future assignment.
 
 ### Assign a CVE ID to vulnerability
 
@@ -53,7 +53,7 @@ When a vulnerability report is received, follow the [CNA decision tree](https://
 to determine if this is a valid vulnerability, in scope for the Kubernetes CNA, that has not yet been assigned a CVE ID,
 and if so, how many distinct vulnerabilities exist in the report.
 
-Assign a reserved ID to the issue, and add at least the following information in the [tracking sheet](https://docs.google.com/spreadsheets/d/178eqxFxShR0I2BeoZ-YUynYnl0fo_0oU0VfmVfBpAQ0/edit):
+Assign a reserved ID to the issue, and add at least the following information in the [tracking sheet]:
 * Date reserved
 * Description
 * Link to the tracking issue in https://github.com/kubernetes-security/security-disclosures/issues (created as part of [on-call workflow](psc-oncall.md#incident-response-workflow))
@@ -85,7 +85,7 @@ Fill in or update the relevant fields, including:
 * Workaround: indicate workaround steps, if applicable
 
 Commit, push to your branch, create a pull request to https://github.com/CVEProject/cvelist master,
-and link the pull request in the [tracking sheet](https://docs.google.com/spreadsheets/d/178eqxFxShR0I2BeoZ-YUynYnl0fo_0oU0VfmVfBpAQ0/edit).
+and link the pull request in the [tracking sheet].
 Once the pull request is merged, indicate in the tracking sheet that the CVE has been populated.
 
 ### Reject unused CVEs
@@ -95,10 +95,12 @@ and no new CVE assignments for that year will be made, update any reserved but u
 for that calendar year to indicate they were rejected and unused.
 
 1. Update the CVE details in github (see https://github.com/CVEProject/cvelist/pull/3175 as an example)
-2. Update the [tracking sheet](https://docs.google.com/spreadsheets/d/178eqxFxShR0I2BeoZ-YUynYnl0fo_0oU0VfmVfBpAQ0/edit) to indicate those CVEs were rejected (see CVE-2019-11256 through CVE-2019-11267 as an example)
+2. Update the [tracking sheet] to indicate those CVEs were rejected (see CVE-2019-11256 through CVE-2019-11267 as an example)
 
 ## Uncommon tasks
 
 ### Splitting, merging, amending CVEs
 
 This is rarely required, but if later inspection reveals a single CVE was actually two separate vulnerabilities, or two separate CVEs were actually a single vulnerability, CVEs can be split or merged following the process described at https://cve.mitre.org/cve/cna/rules.html#Appendix_E
+
+[tracking sheet]: https://github.com/kubernetes-security/security-disclosures#cna-tracker
