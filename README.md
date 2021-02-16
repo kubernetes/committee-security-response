@@ -7,7 +7,6 @@ Kubernetes Security Release Process and Security Committee documentation.
 The Product Security Committee (PSC) is responsible for triaging and handling the security issues for Kubernetes. Following are the current Product Security Committee members:
 
 - CJ Cullen (**[@cjcullen](https://github.com/cjcullen)**) `<cjcullen@google.com>`
-- Craig Ingram (**[@cji](https://github.com/cji)**) `<cji@stripe.com>`
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>` [4096R/0x1688ADC79BECDDAF]
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@redhat.com`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
@@ -25,6 +24,7 @@ Emeritus members:
 - Jess Frazelle (**[@jessfraz](https://github.com/jessfraz)**) `<jess@linux.com>`
 - Jonathan Pulsifer (**[@jonpulsifer](https://github.com/jonpulsifer)**) `<jonathan.pulsifer@shopify.com>`
 - Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**) `<jordan@liggitt.net>` [4096R/0x39928704103C7229]
+- Craig Ingram (**[@cji](https://github.com/cji)**) `<cji@stripe.com>`
 
 ### Contacting the PSC
 
