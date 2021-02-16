@@ -142,6 +142,10 @@ This will then automatically create the following files:
 * kubernetes/community/committee-product-security/README.md
 * kubernetes/community/sig-list.md
 
+##### file: https://github.com/kubernetes/community/blob/master/communication/slack-config/usergroups.yaml
+
+Add / remove the PSC member(s) github name from the `product-security-committee` user group.
+
 #### kubernetes/org repository
 
 ##### file: https://github.com/kubernetes/org/blob/master/config/kubernetes/org.yaml
@@ -249,3 +253,26 @@ access to this org (primarily release managers).
 
 Once a new PSC member has accepted the invite, they should be granted `Owner`
 permissions.
+
+For members stepping down, please ensure they are not assigned any issues in
+the vulnerability trackers:
+
+- https://github.com/kubernetes-security/security-disclosures/issues
+- https://github.com/kubernetes-security/security-disclosures-low/issues
+
+#### Slack
+
+New members must be manually added to the private channels on slack by someone
+who is already a member of those channels:
+
+1. `#psc-private` for private PSC-only discussion
+2. `#security-release-team` for private discussions with the security-release-team and PSC associates
+
+Members who are stepping down must leave the channels themselves.
+
+#### Calendar
+
+Update the Google calendar entries to add or remove the member:
+
+1. PSC Monthly (monthly, first Thursday)
+2. HackerOne sync (every 3 months, second Thursday)
