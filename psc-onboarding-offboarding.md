@@ -276,3 +276,10 @@ Update the Google calendar entries to add or remove the member:
 
 1. PSC Monthly (monthly, first Thursday)
 2. HackerOne sync (every 3 months, second Thursday)
+
+#### Google Docs
+
+Update the sharing settings for the following docs:
+
+- "PSC Monthly Agenda & Notes" (owner: timallclair@gmail.com)
+- "Kubernetes CNA Tracker" (owner: timallclair@gmail.com) - Only for [CNA trained members](https://github.com/kubernetes/security/blob/master/cna-handbook.md)
