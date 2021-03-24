@@ -51,8 +51,8 @@ could be in the form of the following:
 ### Membership
 
 Group membership is managed through the Kubernetes domain group administration
-configuration: http://git.k8s.io/k8s.io/groups/groups.yaml, under the
-`distributors-announce` section.
+configuration: http://git.k8s.io/k8s.io/groups/committee-product-security/groups.yaml,
+under the `distributors-announce` section.
 
 ### Membership Criteria
 
