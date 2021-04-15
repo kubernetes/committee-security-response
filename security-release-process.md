@@ -196,7 +196,7 @@ security aspects to private channels. The fix lead will make the determination
 whether there would be user harm in handling the fix publicly that outweighs the
 benefits of open engagement with the community.
 
-Critical and High severity vulnerability fixes will typically receive an out-of-band release. Medium and Low severity vulnerability fixes will be released as part of the next Kubernetes [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md). 
+Critical and High severity vulnerability fixes will typically receive an out-of-band release. Medium and Low severity vulnerability fixes will be released as part of the next Kubernetes [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md).
 
 Note: CVSS is convenient but imperfect. Ultimately, the Fix Lead has discretion
 on classifying the severity of a vulnerability.
@@ -214,25 +214,42 @@ With the Fix Development underway the Fix Lead needs to come up with an overall 
 
 **Advance Vulnerability Disclosure to Private Distributors List** (Completed within 1-14 days of Disclosure):
 
-- The [Private Distributors List](#private-distributors-list) will be given advance notification of any vulnerability that is assigned a CVE, at least 7 days before the planned public disclosure date. The notification will include all information that can be reasonably provided at the time of the notification. This may include patches or links to PRs, proofs of concept or instructions to reproduce the vulnerability, known mitigations, and timelines for public disclosure. Distributors should read about the [Private Distributors List](#private-distributors-list) to find out the requirements for being added to this list. 
+- The [Private Distributors List](#private-distributors-list) will be given advance notification of any vulnerability that is assigned a CVE, at least 7 days before the planned public disclosure date. The notification will include all information that can be reasonably provided at the time of the notification. This may include patches or links to PRs, proofs of concept or instructions to reproduce the vulnerability, known mitigations, and timelines for public disclosure. Distributors should read about the [Private Distributors List](#private-distributors-list) to find out the requirements for being added to this list.
 - **What if a vendor breaks embargo?** The PSC will assess the damage. The Fix Lead will make the call to release earlier or continue with the plan. When in doubt push forward and go public ASAP.
 
 **Fix Release Day** (Completed within 1-21 days of Disclosure)
 
+Release process:
 - The Fix Lead will cherry-pick the patches onto the master branch and all relevant release branches. The Fix Team will `/lgtm` and `/approve`.
 - The Release Managers will merge these PRs as quickly as possible. Changes shouldn't be made to the commits at this point, to prevent potential conflicts with the patches sent to distributors, and conflicts as the fix is cherry-picked around branches.
 - The Release Managers will ensure all the binaries are built, publicly available, and functional.
-- The [Private Distributors List](#private-distributors-list) will be notified at least 24 hours in advance of a pending release containing security vulnerability fixes with the public messaging, date, and time of the announcement.
-- The Fix Lead will announce the new releases, the CVE number, severity, and impact, and the location of the binaries to get wide distribution and user action. As much as possible this announcement should be actionable, and include any mitigating steps users can take prior to upgrading to a fixed version. The recommended target time is 4pm UTC on a non-Friday weekday. This means the announcement will be seen morning Pacific, early evening Europe, and late evening Asia. The announcement will be sent via the following channels:
-  - kubernetes-dev@googlegroups.com
-  - kubernetes-announce@googlegroups.com
-  - kubernetes-security-announce@googlegroups.com
-  - [#announcements slack channel](https://kubernetes.slack.com/messages/C9T0QMNG4)
-    - Request temporary permission to do this by joining #slack-admins and saying "I'm on the PSC and I need to make a security announcement on #announcements"
-  - [discuss.kubernetes.io](https://discuss.kubernetes.io/c/announcements) forum
-  - In a tracking issue opened in https://github.com/kubernetes/kubernetes/issues, labeled with `area/security`, and prefixed with the associated CVE ID (if applicable)
-- Medium and Low severity vulnerability fixes that will be released as part of the next Kubernetes [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md) will have the fix details included in the patch release notes. Any public announcement sent for these fixes will link to the release notes.
-- The Fix Lead will remove the Fix Team from the private security repo.
+- The Fix Lead will remove the Fix Team from the private security repo once it is no longer needed.
+
+Communications process:
+- The [Private Distributors List](#private-distributors-list) will be notified at least 24 hours in
+  advance of a pending release containing security vulnerability fixes with the public messaging,
+  date, and time of the announcement.
+- The Fix Lead will announce the new releases, the CVE number, severity, and impact, and the
+  location of the binaries to get wide distribution and user action. As much as possible this
+  announcement should be actionable, and include any mitigating steps users can take prior to
+  upgrading to a fixed version. The recommended target time is 4pm UTC on a non-Friday weekday. This
+  means the announcement will be seen morning Pacific, early evening Europe, and late evening Asia.
+  The announcement will be sent via the following channels:
+  - General announcement email ([template](comms-templates/vulnerability-announcement-email.md)) to
+    multiple Kubernetes lists
+  - OSS-Security announcement email
+    ([template](comms-templates/vulnerability-announcement-email.md)) to
+    `oss-security@lists.openwall.com`
+  - `#announcements` slack channel ([template](comms-templates/vulnerability-announcement-slack.md))
+  - [discuss.kubernetes.io](https://discuss.kubernetes.io/c/announcements) forum (this should be
+    posted automatically using the general announcement email template)
+  - Tracking issue opened in https://github.com/kubernetes/kubernetes/issues
+    ([template](comms-templates/vulnerability-announcement-issue.md)) and prefixed with the
+    associated CVE ID (if applicable)
+  - Medium and Low severity vulnerability fixes that will be released as part of the next Kubernetes
+    [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md)
+    will have the fix details included in the patch release notes. Any public announcement sent for
+    these fixes will link to the release notes.
 
 ## Private Distributors List
 

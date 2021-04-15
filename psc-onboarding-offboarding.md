@@ -104,7 +104,7 @@ jdoe
 
 #### kubernetes/k8s.io repository
 
-##### file: https://github.com/kubernetes/k8s.io/blob/master/groups/groups.yaml
+##### file: https://github.com/kubernetes/k8s.io/blob/main/groups/committee-product-security/groups.yaml
 
 `groups.yaml` is the source of truth for membership to the
 product-security-committee mailing lists. Update the `owners` field for the
@@ -115,6 +115,14 @@ following lists:
 - `distributors-announce@kubernetes.io`
 
 Ensure the 3 lists match.
+
+##### file: https://github.com/kubernetes/k8s.io/blob/main/OWNERS_ALIASES
+
+```yaml
+aliases:
+  committee-product-security:
+    - jdoe
+```
 
 #### kubernetes/community repository
 
@@ -262,6 +270,8 @@ the vulnerability trackers:
 
 #### Slack
 
+PSC members must enable slack 2-factor authentication: https://slack.com/help/articles/204509068-Set-up-two-factor-authentication
+
 New members must be manually added to the private channels on slack by someone
 who is already a member of those channels:
 
@@ -283,3 +293,45 @@ Update the sharing settings for the following docs:
 
 - "PSC Monthly Agenda & Notes" (owner: timallclair@gmail.com)
 - "Kubernetes CNA Tracker" (owner: timallclair@gmail.com) - Only for [CNA trained members](https://github.com/kubernetes/security/blob/master/cna-handbook.md)
+
+### Checklist
+
+The following checklist can be pasted into an onboarding issue to track all the steps that need to be taken:
+
+```
+- [ ] kubernetes/security PR:
+  - [ ] README.md
+  - [ ] OWNERS_ALIASES
+  - [ ] SECURITY_CONTACTS
+- [ ] kubernetes/k8s.io PR:
+  - [ ] groups/committee-product-security/groups.yaml
+    - `security@kubernetes.io`
+    - `security-discuss-private@kubernetes.io`
+    - `distributors-announce@kubernetes.io`
+  - [ ] OWNERS_ALIASES
+- [ ] kubernetes/community PR:
+  - [ ] sigs.yaml
+  - [ ] communication/slack-config/usergroups.yaml
+    - [ ] Verify slack 2-factor auth
+  - [ ] `make generate`
+- [ ] kubernetes/org PR:
+  - [ ] config/kubernetes/org.yaml
+- [ ] HackerOne project membership
+  - [ ] Verify 2-factor auth
+- [ ] OpsGenie rotation
+  - [ ] Add new user
+  - [ ] Update rotation
+- [ ] Mailing lists
+  - [ ] [Security Discuss](https://groups.google.com/forum/#!forum/kubernetes-security-discuss) - owner
+  - [ ] [Security Announce](https://groups.google.com/forum/#!forum/kubernetes-security-announce) - owner
+  - [ ] [Kubernetes Announce](https://groups.google.com/forum/#!forum/kubernetes-announce) - manager
+  - [ ] [Kubernetes Dev](https://groups.google.com/forum/#!forum/kubernetes-dev) - member
+- [ ] Verify Discuss account
+- [ ] github.com/kubernetes-security membership
+- [ ] Slack
+  - [ ] Verify 2-factor auth
+  - [ ] `#psc-private` membership
+  - [ ] `#security-release-team` membership
+- [ ] Calendar meetings
+- [ ] Google Docs access
+```
