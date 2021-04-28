@@ -8,9 +8,7 @@ SUBJECT: `[EMBARGOED] $CVE: $SUMMARY`
 
 ### EMBARGOED
 
-The information contained in this email is **[under
-embargo](https://github.com/kubernetes/security/blob/master/private-distributors-list.md#embargo-policy)**
-until the scheduled public disclosure on **$DATE, at 9AM PT**.
+The information contained in this email is **[under embargo](https://github.com/kubernetes/security/blob/master/private-distributors-list.md#embargo-policy)** until the scheduled public disclosure on **$DATE, at 9AM PT**.
 
 _Additional details on the embargo conditions._
 - _If a patch is provided, can it be deployed?_
@@ -18,12 +16,11 @@ _Additional details on the embargo conditions._
 
 ### Issue Details
 
-A security issue was discovered in $COMPONENT that could $BAD_STUFF _(brief description of impact)_.
+A security issue was discovered in Kubernetes where $ACTOR may be able to $DO_SOMETHING. <optional> Kubernetes clusters are only affected if $CONDITION </end optional>
 
-This issue has been rated **$SEVERITY** (optional: $SCORE, link to CVSS calculator), and assigned
-**$CVE_NUMBER** (, other identifiers).
+This issue has been rated **$SEVERITY** (link to CVSS calculator https://www.first.org/cvss/calculator/3.1) (optional: $SCORE), and assigned **$CVE_NUMBER**
 
-_Additional high level description of the vulnerability._
+_Additional background and high level description of the vulnerability._
 
 ### Affected Components and Configurations
 
