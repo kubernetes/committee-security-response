@@ -2,9 +2,9 @@
 
 Kubernetes Security Release Process and Security Committee documentation.
 
-## Product Security Committee (PSC)
+## Security Response Committee (SRC)
 
-The Product Security Committee (PSC) is responsible for triaging and handling the security issues for Kubernetes. Following are the current Product Security Committee members:
+The Security Response Committee (SRC) is responsible for triaging and handling the security issues for Kubernetes. Following are the current Security Response Committee members:
 
 - CJ Cullen (**[@cjcullen](https://github.com/cjcullen)**) `<cjcullen@google.com>`
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>` [4096R/0x1688ADC79BECDDAF]
@@ -26,16 +26,16 @@ Emeritus members:
 - Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**) `<jordan@liggitt.net>` [4096R/0x39928704103C7229]
 - Craig Ingram (**[@cji](https://github.com/cji)**) `<cji@stripe.com>`
 
-### Contacting the PSC
+### Contacting the SRC
 
-There are a number of contact points for the PSC and release managers in charge of security releases. Please use the correct forum for the best and fastest response.
+There are a number of contact points for the SRC and release managers in charge of security releases. Please use the correct forum for the best and fastest response.
 
 | List or Group | Visibility | Uses |
 | ------------- | ---------- | ---- |
-| security@kubernetes.io | Private | Kubernetes security disclosures. This list is closely monitored and triaged by the PSC. [See the disclosure guide for full details.](http://kubernetes.io/security) |
+| security@kubernetes.io | Private | Kubernetes security disclosures. This list is closely monitored and triaged by the SRC. [See the disclosure guide for full details.](http://kubernetes.io/security) |
 | [kubernetes-security-discuss Google Group](https://groups.google.com/forum/#!forum/kubernetes-security-discuss) | Public | Discussion about security disclosure handling, this document, and other updates. |
 | release-managers-private@kubernetes.io | Private | Release Managers private discussion. All members are subscribed to security@kubernetes.io. |
-| security-discuss-private@kubernetes.io | Private | PSC private discussion. All members are subscribed to security@kubernetes.io |
+| security-discuss-private@kubernetes.io | Private | SRC private discussion. All members are subscribed to security@kubernetes.io |
 
 ## Community, discussion, contribution, and support
 
