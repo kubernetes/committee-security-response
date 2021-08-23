@@ -2,10 +2,10 @@
 
 Kubernetes is a large growing community of volunteers, users, and vendors. The Kubernetes community has adopted this security disclosures and response policy to ensure we responsibly handle critical issues.
 
-- [Product Security Committee (PSC)](#product-security-committee-psc)
-  - [Product Security Committee Membership](#product-security-committee-membership)
+- [Security Response Committee (SRC)](#security-response-committee-src)
+  - [Security Response Committee Membership](#security-response-committee-membership)
     - [Joining](#joining)
-      - [PSC Lazy Consensus Selection](#psc-lazy-consensus-selection)
+      - [SRC Lazy Consensus Selection](#SRC-lazy-consensus-selection)
     - [Stepping Down](#stepping-down)
     - [Responsibilities](#responsibilities)
       - [Incident Commander](#incident-commander)
@@ -55,27 +55,27 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
     - [High Value Asset](#high-value-asset)
     - [Service Failure](#service-failure)
 
-## Product Security Committee (PSC)
+## Security Response Committee (SRC)
 
 Security vulnerabilities should be handled quickly and sometimes privately. The primary goal of this process is to reduce the total time users are vulnerable to publicly known exploits.
 
-The [Product Security Committee (PSC)](README.md#product-security-committee-psc) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
+The [Security Response Committee (SRC)](README.md#security-response-committee-src) is responsible for organizing the entire response including internal communication and external disclosure but will need help from relevant developers and release managers to successfully run this process.
 
-The PSC will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list.
+The SRC will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list.
 
-### Product Security Committee Membership
+### Security Response Committee Membership
 
 #### Joining
 
-New potential members to the PSC will first fill a minimum of a 3 month rotation in the [Associate](#Associate) role.
+New potential members to the SRC will first fill a minimum of a 3 month rotation in the [Associate](#Associate) role.
 
-These individuals will be nominated by individuals on steering committee, PSC, or release manager lead and patch release manager.
+These individuals will be nominated by individuals on steering committee, SRC, or release manager lead and patch release manager.
 
-The PSC has a goal to have at least 7 members.
+The SRC has a goal to have at least 7 members.
 
 To encourage diversity members will also abide by a 1/2 maximal representation from any one company at any time. If representation changes due to job shifts or mergers, then members are encouraged to grow the team or replace themselves through mentoring new members. Being overlimit should not continue for longer than 12 months to give time to identify and mentor new members.
 
-##### PSC Lazy Consensus Selection
+##### SRC Lazy Consensus Selection
 
 Selection of new members from the associates will be done by lazy consensus.
 
@@ -88,30 +88,30 @@ Members may step down at anytime and propose a replacement from the pool of elig
 
 #### Responsibilities
 
-- Members should remain active and responsive, and participate in the [oncall rotation](psc-oncall.md).
+- Members should remain active and responsive, and participate in the [oncall rotation](src-oncall.md).
 - Members taking an extended leave of 1 or more months should coordinate with other members to ensure the role is adequately staffed during the leave.
 - Members going on leave for 1-3 months may identify a temporary replacement.
 - Members of a role should remove any other members that have not communicated a leave of absence and either cannot be reached for more than 1 month or are not fulfilling their documented responsibilities for more than 1 month. This may be done through a super-majority vote of members.
 
 ##### Incident Commander
 
-One of the primary responsibilities of the PSC is to coordinate incident response when a
+One of the primary responsibilities of the SRC is to coordinate incident response when a
 vulnerability is discovered. The incident commander is responsible for coordinating all the
 different parts of the security release process (but not handling all those responsibilities
 themselves), and seeing the incident through to the end (or handing off).
 
-The incident commander defaults to the current oncall, but may be handed off to other PSC members as
+The incident commander defaults to the current oncall, but may be handed off to other SRC members as
 needed.
 
 ##### Triage
 
 The current oncall is responsible for triaging incoming vulnerability reports (both through the bug
 bounty and email). For more details on the triage process, see [oncall
-workflow](psc-oncall.md).
+workflow](SRC-oncall.md).
 
 ##### Associate
 
-A role for those wishing to join the PSC. They should not currently be a member
+A role for those wishing to join the SRC. They should not currently be a member
 of security@kubernetes.io.
 
 Their rotation will involve the following:
@@ -146,17 +146,17 @@ The Kubernetes Community asks that all suspected vulnerabilities be privately an
 
 ### Public Disclosure Processes
 
-If you know of a publicly disclosed security vulnerability please IMMEDIATELY email [security@kubernetes.io](mailto:security@kubernetes.io) to inform the Product Security Committee (PSC) about the vulnerability so they may start the patch, release, and communication process.
+If you know of a publicly disclosed security vulnerability please IMMEDIATELY email [security@kubernetes.io](mailto:security@kubernetes.io) to inform the Security Response Committee (SRC) about the vulnerability so they may start the patch, release, and communication process.
 
-If possible the PSC will ask the person making the public report if the issue can be handled via a private disclosure process. If the reporter denies the request, the PSC will move swiftly with the fix and release process. In extreme cases you can ask GitHub to delete the issue but this generally isn't necessary and is unlikely to make a public disclosure less damaging.
+If possible the SRC will ask the person making the public report if the issue can be handled via a private disclosure process. If the reporter denies the request, the SRC will move swiftly with the fix and release process. In extreme cases you can ask GitHub to delete the issue but this generally isn't necessary and is unlikely to make a public disclosure less damaging.
 
 ## Patch, Release, and Public Communication
 
-For each vulnerability a member of the PSC will volunteer to lead coordination
+For each vulnerability a member of the SRC will volunteer to lead coordination
 with the Fix Team and Release Managers, and is responsible for sending disclosure
 emails to the rest of the community. This lead will be referred to as the Fix Lead.
 
-The role of Fix Lead should rotate round-robin across the PSC.
+The role of Fix Lead should rotate round-robin across the SRC.
 
 All of the timelines below are suggestions and assume a Private Disclosure.
 The Fix Lead drives the schedule using their best judgment based on severity,
@@ -173,7 +173,7 @@ These steps should be completed within the first 24 hours of Disclosure.
 - The Fix Lead will work quickly to identify relevant engineers from the affected projects and packages and CC those engineers into the disclosure thread. This selected developers are the Fix Team. A best guess is to invite all assignees in the OWNERS file from the affected packages.
 - The Fix Lead may get the Fix Team access to private security repos in the kubernetes-security GitHub org to develop the fix as required.
 
-Note: The kubernetes-security GitHub org is co-owned and viewable by the PSC and Kubernetes Release Managers. Management of the org is done by SIG Contributor Experience's [GitHub management subproject](https://git.k8s.io/community/github-management).
+Note: The kubernetes-security GitHub org is co-owned and viewable by the SRC and Kubernetes Release Managers. Management of the org is done by SIG Contributor Experience's [GitHub management subproject](https://git.k8s.io/community/github-management).
 
 ### Fix Development Process
 
@@ -215,7 +215,7 @@ With the Fix Development underway the Fix Lead needs to come up with an overall 
 **Advance Vulnerability Disclosure to Private Distributors List** (Completed within 1-14 days of Disclosure):
 
 - The [Private Distributors List](#private-distributors-list) will be given advance notification of any vulnerability that is assigned a CVE, at least 7 days before the planned public disclosure date. The notification will include all information that can be reasonably provided at the time of the notification. This may include patches or links to PRs, proofs of concept or instructions to reproduce the vulnerability, known mitigations, and timelines for public disclosure. Distributors should read about the [Private Distributors List](#private-distributors-list) to find out the requirements for being added to this list.
-- **What if a vendor breaks embargo?** The PSC will assess the damage. The Fix Lead will make the call to release earlier or continue with the plan. When in doubt push forward and go public ASAP.
+- **What if a vendor breaks embargo?** The SRC will assess the damage. The Fix Lead will make the call to release earlier or continue with the plan. When in doubt push forward and go public ASAP.
 
 **Fix Release Day** (Completed within 1-21 days of Disclosure)
 
@@ -268,7 +268,7 @@ These steps should be completed 1-3 days after the Release Date. The retrospecti
 ## Severity Thresholds - How We Do Vulnerability Scoring
 
 The content presented below outlines basic criteria when considering the effect
-of bugs disclosed to the Product Security Committee and their severity. These apply
+of bugs disclosed to the Security Response Committee and their severity. These apply
 mostly to items in "core" but could be abstractly applied to those in other
 repos as well.
 

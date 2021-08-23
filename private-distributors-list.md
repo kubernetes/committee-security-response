@@ -18,7 +18,7 @@ Before any information from the list is shared with respective members of your
 team required to fix an issue, they must agree to the same terms and only
 find out information on a need-to-know basis.
 
-As a clarifying example, this policy forbids PSC members (or others who don't
+As a clarifying example, this policy forbids SRC members (or others who don't
 work on a distribution) from sharing list information with their non-distributor
 employers.
 
@@ -51,7 +51,7 @@ could be in the form of the following:
 ### Membership
 
 Group membership is managed through the Kubernetes domain group administration
-configuration: http://git.k8s.io/k8s.io/groups/committee-product-security/groups.yaml,
+configuration: http://git.k8s.io/k8s.io/groups/security-response-committee/groups.yaml,
 under the `distributors-announce` section.
 
 ### Membership Criteria

@@ -1,6 +1,6 @@
-# Product Security Committee Oncall
+# Security Response Committee Oncall
 
-PSC Oncall is a business-hours only oncall. That means you are not expected to
+SRC Oncall is a business-hours only oncall. That means you are not expected to
 respond to issues outside of your normal daily working hours or on weekends or
 holidays. If you are taking vacation or will be unable to perform your oncall
 duties, please swap oncalls or find coverage for that week. See [managing oncall
@@ -50,7 +50,7 @@ Weekly (ideally at the beginning of your shift):
 
 ## Triage Workflow
 
-![Triage workflow flowchart](images/psc-oncall-triage-flow.png)
+![Triage workflow flowchart](images/SRC-oncall-triage-flow.png)
 
 ### HackerOne triage details
 
@@ -60,7 +60,7 @@ The recommended way of reviewing hackerone issues needing triage is to check
 over the assigned issues daily:
 https://hackerone.com/bugs?subject=kubernetes&view=k8s\_triage
 
-This view tracks issues that are assigned to the Kubernetes Team (PSC), but
+This view tracks issues that are assigned to the Kubernetes Team (SRC), but
 don't yet have a bounty awarded, which is a heuristic for whether the report
 needs attention.
 
@@ -71,9 +71,9 @@ directly to the reporter (Add comment > All participants), or respond in a
 private comment (Team only) and ask (reassign) the H1 Triage team to relay the
 message.
 
-![HackerOne comment](images/psc-oncall-h1-triage-comment.png)
+![HackerOne comment](images/src-oncall-h1-triage-comment.png)
 
-![HackerOne reassign](images/psc-oncall-h1-triage-reassign.png)
+![HackerOne reassign](images/src-oncall-h1-triage-reassign.png)
 
 **2. Set severity & tier**
 
@@ -84,7 +84,7 @@ tiers](https://hackerone.com/kubernetes) (under "Rewards").
 
 _TODO: Refine the definition of reward tiers._
 
-![Set the severity & tier on HackerOne](images/psc-oncall-h1-triage-severity.png)
+![Set the severity & tier on HackerOne](images/src-oncall-h1-triage-severity.png)
 
 [severity]: security-release-process.md#severity-thresholds---how-we-do-vulnerability-scoring
 
@@ -102,7 +102,7 @@ fill in the details manually.
 
 Fill in the known details of the template, including:
 
-- Assignee: yourself, or another PSC member who has volunteered to handle this
+- Assignee: yourself, or another SRC member who has volunteered to handle this
   issue
 - Severity: according to the assigned severity score
 - CVE: most code vulnerabilities (not infrastructure vulnerabilities) should
@@ -119,7 +119,7 @@ Fill in the known details of the template, including:
 Once the issue has been created, add the tracking issue as a reference ID on
 HackerOne.
 
-![Set the HackerOne issue reference](images/psc-oncall-h1-triage-references.png)
+![Set the HackerOne issue reference](images/src-oncall-h1-triage-references.png)
 
 [bookmarklet]: https://github.com/kubernetes-security/security-disclosures#hackerone-issue-escalation
 [new issue template]: https://github.com/kubernetes-security/security-disclosures/issues/new?template=vulnerability.md
@@ -137,11 +137,11 @@ comment box on the report and change the action to "Set award". Enter the
 amount, leave a comment if you'd like, and click "Set award". Congratulations,
 you've completed triage on this report (continue on to incident response).
 
-![Set HackerOne reward](images/psc-oncall-h1-triage-reward.png)
+![Set HackerOne reward](images/src-oncall-h1-triage-reward.png)
 
 ## Incident Response Workflow
 
-![Incident response flowchart](images/psc-oncall-incident-flow.png)
+![Incident response flowchart](images/src-oncall-incident-flow.png)
 
 ## Handoff
 
@@ -168,28 +168,28 @@ explicitly acknowledged the handoff you are still the incident commander!_
 
 ### Adding the rotation to your calendar
 
-1. Navigate to the PSC oncall rotation:
+1. Navigate to the SRC oncall rotation:
    https://kubernetes.app.opsgenie.com/settings/schedule/detail/f835cdef-8df9-4ddc-9a39-911cb9e521b5
 
 2. Click "Open calendar" (appears on hover), add to your calendar.
 
-![Oncall calendar](images/psc-oncall-calendar.png)
+![Oncall calendar](images/src-oncall-calendar.png)
 
 ### Swapping shifts or adding coverage
 
 0. Find someone to agree to swap shifts or cover for days you will be
    unavailable.
 
-1. Navigate to the PSC oncall rotation:
+1. Navigate to the SRC oncall rotation:
    https://kubernetes.app.opsgenie.com/settings/schedule/detail/f835cdef-8df9-4ddc-9a39-911cb9e521b5
 
 2. Click "Add override", fill in the appropriate details.
     - Select the user who will be taking the shift
-    - Select the PSC rotation
+    - Select the SRC rotation
     - Enter the dates for the override
 
 _Note: If you're swapping shifts, you'll need to do this twice, once for your
 shift and once for the shift you're swapping for._
 
 
-![Edit the oncall schedule](images/psc-oncall-override.png)
+![Edit the oncall schedule](images/src-oncall-override.png)

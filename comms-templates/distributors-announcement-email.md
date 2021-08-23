@@ -54,4 +54,4 @@ If you find evidence that this vulnerability has been exploited, please contact 
 
 Thank You,
 
-$PERSON on behalf of the Kubernetes Product Security Committee
+$PERSON on behalf of the Kubernetes Security Response Committee

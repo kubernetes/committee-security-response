@@ -1,6 +1,6 @@
 # CVE Numbering Authority tasks
 
-- [CNA-trained Product Security Committee members](#cna-trained-product-security-committee-members)
+- [CNA-trained Security Response Committee members](#cna-trained-security-response-committee-members)
 - [References](#references)
 - [Common CNA tasks](#common-cna-tasks)
   - [Track CVE ID status](#track-cve-id-status)
@@ -11,9 +11,9 @@
 - [Uncommon tasks](#uncommon-tasks)
   - [Splitting, merging, amending CVEs](#splitting-merging-amending-cves)
 
-## CNA-trained Product Security Committee members
+## CNA-trained Security Response Committee members
 
-The following members of the Product Security Committee have completed CNA training and can request/assign/publish CVEs for the Kubernetes CNA:
+The following members of the Security Response Committee have completed CNA training and can request/assign/publish CVEs for the Kubernetes CNA:
 
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
@@ -32,7 +32,7 @@ A walkthrough of this handbook is also available in [video form](https://youtu.b
 
 ### Track CVE ID status
 
-CVE IDs allocated to the Kubernetes project are accessible to the Product Security Committee [here](https://docs.google.com/spreadsheets/d/178eqxFxShR0I2BeoZ-YUynYnl0fo_0oU0VfmVfBpAQ0/edit)
+CVE IDs allocated to the Kubernetes project are accessible to the Security Response Committee [here](https://docs.google.com/spreadsheets/d/178eqxFxShR0I2BeoZ-YUynYnl0fo_0oU0VfmVfBpAQ0/edit)
 
 ### Requesting CVE IDs
 
@@ -56,7 +56,7 @@ and if so, how many distinct vulnerabilities exist in the report.
 Assign a reserved ID to the issue, and add at least the following information in the [tracking sheet]:
 * Date reserved
 * Description
-* Link to the tracking issue in https://github.com/kubernetes-security/security-disclosures/issues (created as part of [on-call workflow](psc-oncall.md#incident-response-workflow))
+* Link to the tracking issue in https://github.com/kubernetes-security/security-disclosures/issues (created as part of [on-call workflow](src-oncall.md#incident-response-workflow))
 
 ### Populate CVE details
 
