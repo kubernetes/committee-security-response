@@ -123,17 +123,17 @@ Their rotation will involve the following:
 
 #### SIG Release Roles
 
-Included on the [private Release Managers list](https://groups.google.com/a/kubernetes.io/forum/#!forum/release-managers-private)
+Included on the [private Release Managers list](https://groups.google.com/a/kubernetes.io/forum/#!forum/security-release-team)
 are the following members:
 
-- [Release Managers](https://git.k8s.io/sig-release/release-managers.md#release-managers)
+- [Release Managers](https://git.k8s.io/website/content/en/releases/release-managers.md)
 (manage build and release aspects when a security fix must be delivered)
-- [SIG Release Chairs](https://git.k8s.io/sig-release/release-managers.md#sig-release-chairs)
+- [SIG Release Chairs](https://git.k8s.io/website/content/en/releases/release-managers.md#chairs)
 
 It is the responsibility of the [SIG Release Chairs](https://git.k8s.io/sig-release/release-managers.md#sig-release-chairs)
 to curate and maintain the various release role access controls across release cycles.
 
-The [Build Admins](https://git.k8s.io/sig-release/release-managers.md#build-admins)
+The [Build Admins](https://git.k8s.io/website/content/en/releases/release-managers.md#build-admins)
 (Googlers with access to build/publish Kubernetes deb/rpm packages) are not
 explicitly part of the private security release team, but are also involved in
 delivery and must abide by the private disclosure process.
