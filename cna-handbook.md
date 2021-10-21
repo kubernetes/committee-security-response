@@ -24,6 +24,7 @@ The following members of the Security Response Committee have completed CNA trai
 CNA documents are hosted by MITRE at https://cve.mitre.org/about/documents.html#cna, notably:
 
 * CNA onboarding guides: https://cveproject.github.io/docs/cna/onboarding/index.html
+    * Also available in video form: https://www.youtube.com/playlist?list=PLWfD9RQVdJ6c4eMkdqbOKqF7zPCqXkgX3
 * CNA Rules: https://cve.mitre.org/cve/cna/rules.html
 
 A walkthrough of this handbook is also available in [video form](https://youtu.be/pcmAaEP7HD4).
@@ -84,9 +85,18 @@ Fill in or update the relevant fields, including:
 * Source: Link to the Kubernetes github issue(s) and indicate if it was discovered internally or by a user
 * Workaround: indicate workaround steps, if applicable
 
-Commit, push to your branch, create a pull request to https://github.com/CVEProject/cvelist master,
-and link the pull request in the [tracking sheet].
-Once the pull request is merged, indicate in the tracking sheet that the CVE has been populated.
+Commit, push to your branch, create a pull request to
+https://github.com/kubernetes-security/cvelist-public master, and link the pull request in the
+[tracking sheet]. Review any errors from the PR validation, and request a review from a CNA-approved
+SRC member.
+
+Once the PR to our fork has merged, a CNA approved member should open a PR to sync the upstream
+cvelist with our fork:
+https://github.com/CVEProject/cvelist/compare/master...kubernetes-security:master
+
+
+Once the upstream pull request is merged, indicate in the tracking sheet that the CVE has been
+populated.
 
 ### Reject unused CVEs
 
