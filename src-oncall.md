@@ -50,7 +50,7 @@ Weekly (ideally at the beginning of your shift):
 
 ## Triage Workflow
 
-![Triage workflow flowchart](images/SRC-oncall-triage-flow.png)
+![Triage workflow flowchart](images/src-oncall-triage-flow.png)
 
 ### HackerOne triage details
 
