@@ -1,0 +1,11 @@
+# See the OWNERS_ALIASES docs at https://go.k8s.io/owners#owners_aliases
+
+aliases:
+  committee-security-response:
+    - cjcullen
+    - joelsmith
+    - lukehinds
+    - micahhausler
+    - swamymsft
+    - tabbysable
+    - tallclair
