@@ -128,7 +128,7 @@ are the following members:
 
 - [Release Managers](https://kubernetes.io/releases/release-managers/)
 (manage build and release aspects when a security fix must be delivered)
-- [SIG Release Chairs](https://git.k8s.io/website/content/en/releases/release-managers.md#chairs)
+- [SIG Release Chairs](https://kubernetes.io/releases/release-managers/#chairs)
 
 It is the responsibility of the [SIG Release Chairs](https://git.k8s.io/sig-release/release-managers.md#sig-release-chairs)
 to curate and maintain the various release role access controls across release cycles.
