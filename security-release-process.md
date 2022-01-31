@@ -126,7 +126,7 @@ Their rotation will involve the following:
 Included on the [private Release Managers list](https://groups.google.com/a/kubernetes.io/forum/#!forum/security-release-team)
 are the following members:
 
-- [Release Managers](https://git.k8s.io/website/content/en/releases/release-managers.md)
+- [Release Managers](https://kubernetes.io/releases/release-managers/)
 (manage build and release aspects when a security fix must be delivered)
 - [SIG Release Chairs](https://git.k8s.io/website/content/en/releases/release-managers.md#chairs)
 
