@@ -79,29 +79,6 @@ aliases:
     - jdoe
 ```
 
-##### file: https://github.com/kubernetes/security/blob/master/SECURITY_CONTACTS
-
-Add / remove the SRC member(s) github name from the alphabetized list in
-`security/SECURITY_CONTACTS`.
-
-```
-# Defined below are the security contacts for this repo.
-#
-# They are the contact point for the Security Response Committee to reach out
-# to for triaging and handling of incoming issues.
-#
-# The below names agree to abide by the
-# [Embargo Policy](https://git.k8s.io/security/private-distributors-list.md#embargo-policy)
-# and will be removed and replaced if they violate that agreement.
-#
-# DO NOT REPORT SECURITY VULNERABILITIES DIRECTLY TO THESE NAMES, FOLLOW THE
-# INSTRUCTIONS AT https://kubernetes.io/security/
-
-...
-jdoe
-...
-```
-
 #### kubernetes/k8s.io repository
 
 ##### file: https://github.com/kubernetes/k8s.io/blob/main/groups/security-response-committee/groups.yaml
