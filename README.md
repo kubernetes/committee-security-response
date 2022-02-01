@@ -10,12 +10,11 @@ The Security Response Committee (SRC) is responsible for triaging and handling t
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>` [4096R/0x1688ADC79BECDDAF]
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@redhat.com`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
-- Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
+- Mo Khan (**[@enj](https://github.com/enj)**) `<mok@vmware.com>`
 - Tabitha Sable (**[@tabbysable](https://github.com/tabbysable)**) `<tabitha.c.sable@gmail.com>`
 - Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<timallclair@gmail.com>`
 
 [Associate](security-release-process.md#associate) members include:
-- Mo Khan (**[@enj](https://github.com/enj)**) `<mok@vmware.com>`
 - Sam Fowler (**[@sfowl](https://github.com/sfowl)**) `<sfowler@redhat.com>`
 - Taahir Ahmed (**[@ahmedtd](https://github.com/ahmedtd)**) `<taahm@google.com>`
 
@@ -25,6 +24,7 @@ Emeritus members:
 - Jonathan Pulsifer (**[@jonpulsifer](https://github.com/jonpulsifer)**) `<jonathan.pulsifer@shopify.com>`
 - Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**) `<jordan@liggitt.net>` [4096R/0x39928704103C7229]
 - Craig Ingram (**[@cji](https://github.com/cji)**) `<cji@stripe.com>`
+- Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
 
 ### Contacting the SRC
 
