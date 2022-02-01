@@ -81,7 +81,7 @@ aliases:
 
 #### kubernetes/k8s.io repository
 
-##### file: https://github.com/kubernetes/k8s.io/blob/main/groups/security-response-committee/groups.yaml
+##### file: https://github.com/kubernetes/k8s.io/blob/main/groups/committee-security-response/groups.yaml
 
 `groups.yaml` is the source of truth for membership to the
 security-response-committee mailing lists. Update the `owners` field for the
