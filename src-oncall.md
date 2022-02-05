@@ -19,11 +19,11 @@ rotation](#appendix-managing-oncall-rotation).
 
 Daily:
 
-- Triage HackerOne reports ([query](https://hackerone.com/bugs?subject=kubernetes&view=k8s_triage))
-  - See [HackerOne Workflow](#hackerone-triage-details) for details
-
-- Triage and respond to security@kubernetes.io emails. If needed, create a [security-disclosures issue](https://github.com/kubernetes-security/security-disclosures/issues).
-  It's a good idea to make sure that someone has responded to all recent threads. Threads are listed on [google groups](https://groups.google.com/a/kubernetes.io/forum/#!forum/security).
+- Triage vulnerability reports. We target 1 business day for initial response.
+  - HackerOne reports ([query](https://hackerone.com/bugs?subject=kubernetes&view=k8s_triage)),see
+    [HackerOne Workflow](#hackerone-triage-details) for details.
+  - security@kubernetes.io emails, see [securit@kubernetes.io Triage](#securitykubernetesio-triage)
+    for details.
 
 - Handle incident response for ongoing issues
   - Drive progress on assigned issues ([query](https://github.com/kubernetes-security/security-disclosures/issues/assigned/@me))
@@ -94,35 +94,16 @@ Every non-public issue that we decide to take action on should get filed as a
 GitHub issue in the https://github.com/kubernetes-security/security-disclosures
 repo.
 
-From the HackerOne report, you can use the [security-disclosures
-bookmarklet][bookmarklet] to copy the relevant information into an issue on
-https://github.com/kubernetes-security/security-disclosures/issues. Alternatively,
-or when filing from an email report, you can use the [new issue template][], and
-fill in the details manually.
+From the HackerOne report, you can use the GitHub integration to auto-file the tracking issue, and
+sync updates with the H1 report:
 
-Fill in the known details of the template, including:
-
-- Assignee: yourself, or another SRC member who has volunteered to handle this
-  issue
-- Severity: according to the assigned severity score
-- CVE: most code vulnerabilities (not infrastructure vulnerabilities) should
-  have an assigned CVE.
-- Original report: link back to the HackerOne report or google groups thread.
-- Current status: one of
-    - planning - preliminary response stages
-    - development - fix in progress
-    - embargo - fix complete, sent to distributors under embargo
-    - released - fix has shipped
-    - published - vulnerability details have been made public
-- Attribution: the original reporter
-
-Once the issue has been created, add the tracking issue as a reference ID on
-HackerOne.
-
-![Set the HackerOne issue reference](images/src-oncall-h1-triage-references.png)
-
-[bookmarklet]: https://github.com/kubernetes-security/security-disclosures#hackerone-issue-escalation
-[new issue template]: https://github.com/kubernetes-security/security-disclosures/issues/new?template=vulnerability.md
+1. Click "References" (in the right sidebar)
+2. Select "Kubernetes HackerOne Robot" to automatically create the issue.
+    - If the issue was already created manually, or is being created in a different repo (e.g. for a
+      public issue), select "Manual Integration" instead.
+3. Click "Create"
+4. Assign the created issue to the appropriate assignee (usually yourself), and apply any relevant
+   labels.
 
 **4. Award bounty**
 
@@ -138,6 +119,45 @@ amount, leave a comment if you'd like, and click "Set award". Congratulations,
 you've completed triage on this report (continue on to incident response).
 
 ![Set HackerOne reward](images/src-oncall-h1-triage-reward.png)
+
+**5. Mark resolved & Disclose**
+
+**Pending Resolution tab:** Once the issue has been resolved or fully handed off to the public
+Kubernetes community, it should be marked as resolved. Select "Close report" from the action
+drop-down over the comment box, and set the status to "Resolved". Add a comment about the final
+resolution (often a link to the public announcement).
+
+**Needs Disclosure tab:** Most issues should be publicly disclosed, unless there is a specific
+reason not to. From the drop-down, choose "Request disclosure". "Full Disclosure" should be used in
+most cases. It discloses all the details from the report, except for team-only comments (red comment
+boxes). Specific details can be redacted.
+
+Unfortunately there is no way to mark a report as "do not disclose". If the report shouldn't be
+disclosed for any reason, leave a team-only comment with `DO NOT DISCLOSE` and a justification.
+
+**Pending Disclosure tab:** Once disclosure has been requested, we give the original reporter 1
+month to respond to the disclosure request. If there hasn't been a repsonse for over 1 month, you
+can just disclose it. Select "Disclose" from the drop-down menu, and confirm the disclosure type.
+
+### security@kubernetes.io Triage
+
+We leverage Google Groups [collaborative
+inbox](https://support.google.com/a/users/answer/167430?hl=en) features to triage incoming emails to
+the list.
+
+1. Every actionable email should have an assignee who is accountable for ensuring the report is
+   followed up and responded to in a timely manner.
+    - Note: we have an auto-responder which encourages reporters to resubmit reports through the
+      HackerOne bug bounty, so keep an eye out for duplicates.
+2. Unacctionable emails should be marked as such.
+3. Issues which have been resolved should be marked as completed.
+4. Legitimate vulnerability reports should be copied into a tracking issue
+    - Include a link back to Google Groups thread (original report field in the template)
+    - Add the `Tracked` label to the groups thread
+
+Spam: when a spam message is received, please use the "Report abuse" button. Reporting a message as
+abuse only hides it for the reporter, so after reporting it please delete the original.
+
 
 ## Incident Response Workflow
 
