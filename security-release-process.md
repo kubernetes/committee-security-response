@@ -133,7 +133,7 @@ are the following members:
 It is the responsibility of the [SIG Release Chairs](https://kubernetes.io/releases/release-managers/#chairs)
 to curate and maintain the various release role access controls across release cycles.
 
-The [Build Admins](https://git.k8s.io/website/content/en/releases/release-managers.md#build-admins)
+The [Build Admins](https://kubernetes.io/releases/release-managers/#build-admins)
 (Googlers with access to build/publish Kubernetes deb/rpm packages) are not
 explicitly part of the private security release team, but are also involved in
 delivery and must abide by the private disclosure process.
