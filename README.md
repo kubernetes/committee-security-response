@@ -10,7 +10,7 @@ The Security Response Committee (SRC) is responsible for triaging and handling t
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>` [4096R/0x1688ADC79BECDDAF]
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@redhat.com`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
-- Mo Khan (**[@enj](https://github.com/enj)**) `<mok@vmware.com>`
+- Mo Khan (**[@enj](https://github.com/enj)**) `<i@monis.app>`
 - Tabitha Sable (**[@tabbysable](https://github.com/tabbysable)**) `<tabitha.c.sable@gmail.com>`
 - Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<timallclair@gmail.com>`
 
