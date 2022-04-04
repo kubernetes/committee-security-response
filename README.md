@@ -17,6 +17,7 @@ The Security Response Committee (SRC) is responsible for triaging and handling t
 [Associate](security-release-process.md#associate) members include:
 - Sam Fowler (**[@sfowl](https://github.com/sfowl)**) `<sfowler@redhat.com>`
 - Taahir Ahmed (**[@ahmedtd](https://github.com/ahmedtd)**) `<taahm@google.com>`
+- Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
 
 Emeritus members:
 - Brandon Philips (**[@philips](https://github.com/philips)**) `<bphilips@redhat.com>`
