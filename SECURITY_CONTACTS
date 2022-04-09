@@ -1,0 +1,17 @@
+# Defined below are the security contacts for this repo.
+#
+# They are the contact point for the Security Response Committee to reach out
+# to for triaging and handling of incoming issues.
+#
+# Yes, this is absurd because this repo is for use by the Security Response
+# Committee, and as a tautology, we know how to contact ourselves. Creating
+# this file avoids the need to special-case our own repos in the bot. 
+#
+# The below names agree to abide by the
+# [Embargo Policy](https://git.k8s.io/security/private-distributors-list.md#embargo-policy)
+# and will be removed and replaced if they violate that agreement.
+#
+# DO NOT REPORT SECURITY VULNERABILITIES DIRECTLY TO THESE NAMES, FOLLOW THE
+# INSTRUCTIONS AT https://kubernetes.io/security/
+
+committee-security-response
