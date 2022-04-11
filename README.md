@@ -2,6 +2,8 @@
 
 Kubernetes Security Release Process and Security Committee documentation.
 
+To report a vulnerability, please refer to https://kubernetes.io/security.
+
 ## Security Response Committee (SRC)
 
 The Security Response Committee (SRC) is responsible for triaging and handling the security issues for Kubernetes. Following are the current Security Response Committee members:
@@ -18,14 +20,6 @@ The Security Response Committee (SRC) is responsible for triaging and handling t
 - Sam Fowler (**[@sfowl](https://github.com/sfowl)**) `<sfowler@redhat.com>`
 - Taahir Ahmed (**[@ahmedtd](https://github.com/ahmedtd)**) `<taahm@google.com>`
 - Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
-
-Emeritus members:
-- Brandon Philips (**[@philips](https://github.com/philips)**) `<bphilips@redhat.com>`
-- Jess Frazelle (**[@jessfraz](https://github.com/jessfraz)**) `<jess@linux.com>`
-- Jonathan Pulsifer (**[@jonpulsifer](https://github.com/jonpulsifer)**) `<jonathan.pulsifer@shopify.com>`
-- Jordan Liggitt (**[@liggitt](https://github.com/liggitt)**) `<jordan@liggitt.net>` [4096R/0x39928704103C7229]
-- Craig Ingram (**[@cji](https://github.com/cji)**) `<cji@stripe.com>`
-- Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
 
 ### Contacting the SRC
 

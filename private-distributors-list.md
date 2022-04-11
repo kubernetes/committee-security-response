@@ -23,30 +23,21 @@ work on a distribution) from sharing list information with their non-distributor
 employers.
 
 In the unfortunate event you share the information beyond what is allowed by
-this policy, you _must_ urgently inform the security@kubernetes.io
-mailing list of exactly what information
-leaked and to whom. A retrospective will take place after the leak so
-we can assess how to not make the same mistake in the future.
+this policy, you _must_ urgently inform the security@kubernetes.io mailing list
+of exactly what information leaked and to whom, as well as the steps that will
+be taken to prevent future leaks.
 
-If you continue to leak information and break the policy outlined here, you
-will be removed from the list.
+Repeated offenses may lead to the removal from the distributors list.
 
 ### Contributing Back
 
 This is a team effort. As a member of the list you must carry some water. This
 could be in the form of the following:
 
-**Technical**
-
 - Review and/or test the proposed patches and point out potential issues with
   them (such as incomplete fixes for the originally reported issues, additional
   issues you might notice, and newly introduced bugs), and inform the list of the
   work done even if no issues were encountered.
-
-**Administrative**
-
-- Help draft emails to the public disclosure mailing list.
-- Help with release notes.
 
 ### Membership
 
