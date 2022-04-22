@@ -1,5 +1,6 @@
 # CVE Numbering Authority tasks
 
+<!-- toc -->
 - [CNA-trained Security Response Committee members](#cna-trained-security-response-committee-members)
 - [References](#references)
 - [Common CNA tasks](#common-cna-tasks)
@@ -10,6 +11,7 @@
   - [Reject unused CVEs](#reject-unused-cves)
 - [Uncommon tasks](#uncommon-tasks)
   - [Splitting, merging, amending CVEs](#splitting-merging-amending-cves)
+<!-- /toc -->
 
 ## CNA-trained Security Response Committee members
 
