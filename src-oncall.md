@@ -6,14 +6,17 @@ holidays. If you are taking vacation or will be unable to perform your oncall
 duties, please swap oncalls or find coverage for that week. See [managing oncall
 rotation](#appendix-managing-oncall-rotation).
 
+<!-- toc -->
 - [Responsibilities](#responsibilities)
 - [Triage Workflow](#triage-workflow)
   - [HackerOne triage details](#hackerone-triage-details)
+  - [security@kubernetes.io Triage](#securitykubernetesio-triage)
 - [Incident Response Workflow](#incident-response-workflow)
 - [Handoff](#handoff)
 - [Appendix: Managing Oncall Rotation](#appendix-managing-oncall-rotation)
   - [Adding the rotation to your calendar](#adding-the-rotation-to-your-calendar)
   - [Swapping shifts or adding coverage](#swapping-shifts-or-adding-coverage)
+<!-- /toc -->
 
 ## Responsibilities
 

@@ -10,6 +10,24 @@ before a nomination can be made from by any existing SRC members.
 For the purpose of example, we will use a placeholder name of **Jane Doe** with
 a github username **`jdoe`** and a company name of **ACME LTD**.
 
+<!-- toc -->
+- [Associate Role](#associate-role)
+- [Required file and access grant updates.](#required-file-and-access-grant-updates)
+  - [kubernetes/security repository](#kubernetessecurity-repository)
+  - [kubernetes/k8s.io repository](#kubernetesk8sio-repository)
+  - [kubernetes/community repository](#kubernetescommunity-repository)
+  - [kubernetes/org repository](#kubernetesorg-repository)
+  - [Add/remove from HackerOne](#addremove-from-hackerone)
+  - [Add/remove from OpsGenie rotation](#addremove-from-opsgenie-rotation)
+  - [Add/ Remove SRC Owner permission from Kubernetes Security Mailing Lists](#add-remove-src-owner-permission-from-kubernetes-security-mailing-lists)
+  - [Discuss Account](#discuss-account)
+  - [kubernetes-security github org](#kubernetes-security-github-org)
+  - [Slack](#slack)
+  - [Calendar](#calendar)
+  - [Google Docs](#google-docs)
+- [Checklist](#checklist)
+<!-- /toc -->
+
 ### Associate Role
 
 Once a candidate has completed a 3 month rotation in the [Associate](https://github.com/kubernetes/security/blob/master/security-release-process.md#Associate) role, existing SRC Members can
