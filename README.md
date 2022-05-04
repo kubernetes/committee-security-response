@@ -20,6 +20,8 @@ The Security Response Committee (SRC) is responsible for triaging and handling t
 - Sam Fowler (**[@sfowl](https://github.com/sfowl)**) `<sfowler@redhat.com>`
 - Taahir Ahmed (**[@ahmedtd](https://github.com/ahmedtd)**) `<taahm@google.com>`
 - Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
+- Rita Zhang (**[@ritazh](https://github.com/ritazh)**) `rita.z.zhang@gmail.com`
+- Pushkar Joglekar (**[@PushkarJ](https://github.com/PushkarJ)**) `pushkarj.at.work@gmail.com`
 
 ### Contacting the SRC
 
