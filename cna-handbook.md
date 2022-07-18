@@ -1,16 +1,20 @@
 # CVE Numbering Authority tasks
 
 <!-- toc -->
-- [CNA-trained Security Response Committee members](#cna-trained-security-response-committee-members)
-- [References](#references)
-- [Common CNA tasks](#common-cna-tasks)
-  - [Track CVE ID status](#track-cve-id-status)
-  - [Requesting CVE IDs](#requesting-cve-ids)
-  - [Assign a CVE ID to vulnerability](#assign-a-cve-id-to-vulnerability)
-  - [Populate CVE details](#populate-cve-details)
-  - [Reject unused CVEs](#reject-unused-cves)
-- [Uncommon tasks](#uncommon-tasks)
-  - [Splitting, merging, amending CVEs](#splitting-merging-amending-cves)
+- [CVE Numbering Authority tasks](#cve-numbering-authority-tasks)
+  - [CNA-trained Security Response Committee members](#cna-trained-security-response-committee-members)
+  - [References](#references)
+  - [Common CNA tasks](#common-cna-tasks)
+    - [Track CVE ID status](#track-cve-id-status)
+    - [Requesting CVE IDs](#requesting-cve-ids)
+    - [cvelib](#cvelib)
+      - [Setup](#setup)
+      - [User admin](#user-admin)
+    - [Assign a CVE ID to vulnerability](#assign-a-cve-id-to-vulnerability)
+    - [Populate CVE details](#populate-cve-details)
+    - [Reject unused CVEs](#reject-unused-cves)
+  - [Uncommon tasks](#uncommon-tasks)
+    - [Splitting, merging, amending CVEs](#splitting-merging-amending-cves)
 <!-- /toc -->
 
 ## CNA-trained Security Response Committee members
@@ -35,20 +39,60 @@ A walkthrough of this handbook is also available in [video form](https://youtu.b
 
 ### Track CVE ID status
 
-CVE IDs allocated to the Kubernetes project are accessible to the Security Response Committee [here](https://docs.google.com/spreadsheets/d/178eqxFxShR0I2BeoZ-YUynYnl0fo_0oU0VfmVfBpAQ0/edit)
+As of 2022, CVE IDs are dynamcally reserved from MITRE's CVE API. CNA-trained SRC members can use an open-source CLI to reserve new CVE IDs as they are needed. Newly reserved CVE IDs and those previously allocated the Kubernetes project are accessible to the Security Response Committee [here](https://docs.google.com/spreadsheets/d/178eqxFxShR0I2BeoZ-YUynYnl0fo_0oU0VfmVfBpAQ0/edit)
 
 ### Requesting CVE IDs
 
-If a new CVE ID is needed to assign to a new issue, and reserved IDs for the current year are exhausted, request a new block at https://cveform.mitre.org/:
+If a new CVE ID is needed to assign to a new issue, and reserved IDs for the current year are exhausted, you can use the command line client [cvelib][cvelib].
 
-* Request type: "Request a block of IDs (For CNAs only)"
-* Email address: security@kubernetes.io
-* Number of CVE IDs needed: estimate number needed for the remainder of the year
-  * if you don't get enough, it's easy to get more
-  * if you request too many, we have to update/reject them after the year ends
-* Additional information: Indicate the request is for the Kubernetes CNA
+[cvelib]: https://github.com/RedHatProductSecurity/cvelib
 
-Once the block of CVE IDs is received, add them to the [tracking sheet] as unassigned IDs for future assignment.
+Once the CVE ID is received, add it to the [tracking sheet] as unassigned IDs for future assignment.
+
+### cvelib
+
+#### Setup
+
+If you want to run cvelib in a container, use the following
+
+```bash
+# Don't quote the values
+echo << EOF > env.txt
+CVE_USER=${YOUR_EMAIL}
+CVE_ORG=kubernetes
+CVE_API_KEY=${YOUR_API_KEY}
+EOF
+
+cat << EOF > Dockerfile
+FROM python:3-slim
+
+RUN pip install cvelib
+
+ENTRYPOINT ["/usr/local/bin/cve"]
+EOF
+
+docker build -t $USER/cvelib:latest .
+docker run --env-file=env.txt -it --rm $USER/cvelib:latest
+```
+
+By not specifying any arguments, the help output will be displayed. You can then explore the various sub arguments in the CLI. To see the arguments for reserving a single CVE, you can run the following command:
+
+```bash
+docker run --env-file=env.txt -it --rm $USER/cvelib:latest reserve -h
+```
+
+#### User admin
+
+To see help output on resetting your own API key, you can run the following command:
+
+```bash
+docker run --env-file=env.txt -it --rm $USER/cvelib:latest user reset-key -h
+```
+
+To see help output on creating a new CNA admin user, you can run the following command:
+```bash
+docker run --env-file=env.txt -it --rm $USER/cvelib:latest user create -h
+```
 
 ### Assign a CVE ID to vulnerability
 
