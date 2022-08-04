@@ -233,6 +233,11 @@ These steps should be completed 1-3 days after the Release Date. The retrospecti
 
 ## Severity
 
-Severity is evaluated on a case-by-case basis, guided by [CVSS 3.1](https://www.first.org/cvss/v3.1/specification-document).
+The Security Response Committee evaluates vulnerability severity on a case-by-case basis, guided by
+[CVSS 3.1](https://www.first.org/cvss/v3.1/specification-document).
 
-TODO(#147): Document a guide to interpretting CVSS for Kubernetes.
+TODO(#147): Document a guide to how the SRC interprets CVSS for Kubernetes.
+
+## Severity Thresholds - How We Do Vulnerability Scoring
+
+Moved to [Severity Ratings](severity-ratings.md).
