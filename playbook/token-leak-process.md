@@ -12,7 +12,7 @@ The SRC may become aware that a Kubernetes Org member has leaked a GitHub token.
 ## Contact
 
 * Contact the user via email, letting them know about the token leak
->Dear USER,
+>Dear `USER`,
 >
 >We were recently notified that a personal GitHub token has been leaked (say a little about how the token was leaked, if possible. e.g. "via CI logs visible on https://example.net/ci-logs").
 >
@@ -20,14 +20,14 @@ The SRC may become aware that a Kubernetes Org member has leaked a GitHub token.
 >
 >Best,
 >
->YOUR NAME HERE
+>`YOUR NAME HERE`  
 >Kubernetes SRC
 * If the user is an OWNER or might have other privileged roles in the project, contact a ContribEx chair or Steering to discuss whether further incident response is needed
 * If the user has not confirmed token revocation within an appropriate timeframe, submit a [GitHub Private Information Removal Request](https://docs.github.com/en/site-policy/content-removal-policies/github-private-information-removal-policy#sending-a-private-information-removal-request)
->The Kubernetes SRC has been informed that an access token for the GitHub user USERNAME-GOES-HERE has leaked. (Include whatever information you can to provide evidence of the token leak.)
+>The Kubernetes SRC has been informed that an access token for the GitHub user `USERNAME-GOES-HERE` has leaked. `(Include whatever information you can to provide evidence of the token leak.)`
 >
->Because USERNAME-GOES-HERE is a member of the Kubernetes GitHub org, the leak of this token presents a security risk to Kubernetes. Organization membership allows an individual to perform code review and submit PRs to CI testing, which allows the execution of code on our test infrastructure.
+>Because `USERNAME-GOES-HERE` is a member of the Kubernetes GitHub org, the leak of this token presents a security risk to Kubernetes. Organization membership allows an individual to perform code review and submit PRs to CI testing, which allows the execution of code on our test infrastructure.
 >
->To eliminate the security risk to Kubernetes, please revoke the affected token. (Include token identifying information if you have it.)
+>To eliminate the security risk to Kubernetes, please revoke the affected token. `(Include token identifying information if you have it.)`
 ## Followup
 * Perform any necessary incident response as identified with the SRC, ContribEx, and Steering
