@@ -216,6 +216,8 @@ Communications process:
     [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md)
     will have the fix details included in the patch release notes. Any public announcement sent for
     these fixes will link to the release notes.
+  - Medium and Low vulnerabilities with public fixes (PRs) can be announced on private
+    distributors list at the same time and as part of the general announcement email.
 
 ## Private Distributors List
 

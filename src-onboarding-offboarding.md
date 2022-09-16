@@ -320,7 +320,7 @@ The following checklist can be pasted into an onboarding issue to track all the 
   - [ ] [Security Discuss](https://groups.google.com/forum/#!forum/kubernetes-security-discuss) - owner
   - [ ] [Security Announce](https://groups.google.com/forum/#!forum/kubernetes-security-announce) - owner
   - [ ] [Kubernetes Announce](https://groups.google.com/forum/#!forum/kubernetes-announce) - manager
-  - [ ] [Kubernetes Dev](https://groups.google.com/forum/#!forum/kubernetes-dev) - member
+  - [ ] [Kubernetes Dev](https://groups.google.com/a/kubernetes.io/g/dev) - member
 - [ ] Verify Discuss account
 - [ ] github.com/kubernetes-security membership
 - [ ] Slack
