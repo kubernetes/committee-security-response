@@ -11,7 +11,7 @@ The SRC may become aware that a Kubernetes Org member has leaked a GitHub token.
 
 ## Contact
 
-* Contact the user via email, letting them know about the token leak
+* Contact the user via email if possible, letting them know about the token leak. You can usually get an email from their GitHub profile or recent commits to Kubernetes.
 >Dear `USER`,
 >
 >We were recently notified that a personal GitHub token has been leaked (say a little about how the token was leaked, if possible. e.g. "via CI logs visible on https://example.net/ci-logs").
@@ -23,6 +23,6 @@ The SRC may become aware that a Kubernetes Org member has leaked a GitHub token.
 >`YOUR NAME HERE`  
 >Kubernetes SRC
 * If the user is an OWNER or might have other privileged roles in the project, contact a ContribEx chair or Steering to discuss whether further incident response is needed
-* Contact a GitHub admin to submit a support ticket asking for the token to be revoked. They should cc our contacts there, who will escalate with the term “3rd party revocation”
+* Contact a Kubernetes GitHub org adminstrator (ask for one to DM you in #sig-contribex on Slack). Have them submit a support ticket asking for the token to be revoked. They should cc Kubernetes's contacts at GitHub, who will escalate with the term “3rd party revocation”
 ## Followup
 * Perform any necessary incident response as identified with the SRC, ContribEx, and Steering
