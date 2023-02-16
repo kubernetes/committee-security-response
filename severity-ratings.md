@@ -21,7 +21,7 @@ but you can specifically think of `kube-apiserver` and `kubelet` being the main 
 
 - Components built from source in the `kubernetes` github organization and
   [all current organizations in use](https://git.k8s.io/community/github-management/README.md#actively-used-github-organizations)
-- Container images under the `k8s.gcr.io` repository
+- Container images under the `k8s.gcr.io` and `registry.k8s.io` repositories
 - Containers included in the [core addons directory](https://git.k8s.io/kubernetes/cluster/addons)
 
 The server classification is usually not appropriate when user interaction
