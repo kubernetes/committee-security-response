@@ -3,15 +3,10 @@
 This document outlines the process for individual(s) both joining or leaving
 the Kubernetes SRC (Security Response Committee).
 
-The key differentiator between on-boarding and off-boarding SRC members, is that
-individuals joining are first required to have completed the [Associate Role](#associate-role)
-before a nomination can be made from by any existing SRC members.
-
 For the purpose of example, we will use a placeholder name of **Jane Doe** with
 a github username **`jdoe`** and a company name of **ACME LTD**.
 
 <!-- toc -->
-- [Associate Role](#associate-role)
 - [Required file and access grant updates.](#required-file-and-access-grant-updates)
   - [kubernetes/security repository](#kubernetessecurity-repository)
   - [kubernetes/k8s.io repository](#kubernetesk8sio-repository)
@@ -27,34 +22,6 @@ a github username **`jdoe`** and a company name of **ACME LTD**.
   - [Google Docs](#google-docs)
 - [Checklist](#checklist)
 <!-- /toc -->
-
-### Associate Role
-
-Once a candidate has completed a 3 month rotation in the [Associate](https://github.com/kubernetes/security/blob/master/security-release-process.md#Associate) role, existing SRC Members can
-nominate said individual(s) for promotion from Associate to full SRC members. See
-[joining](https://github.com/kubernetes/security/blob/master/security-release-process.md#joining)
-for further details on the SRC selection process.
-
-This selection process is initiated with an email sent to the
-[kubernetes-security-discuss mailing list](https://groups.google.com/forum/#!forum/kubernetes-security-discuss)
-once the three month Associate Role period is complete.
-
-The following template may be used:
-
-```
-I want to nominate Jane Doe to join the Security Response Committee as
-a full member. She has been an associate member since December 4th 2018
-and in that role over the last three months he has helped on a number of
-tasks including:
-
-<list work carried out as associate>
-
-Our process for accepting this nomination is lazy consensus and I will
-close the round of consensus on March 15th, 2019 to leave time for any
-comments or question. If the nomination is accepted Jane will take on
-the full responsibilities of a Security Committee member and take on a
-weekly rotation for security@kubernetes.io on-call rotation.
-```
 
 ### Required file and access grant updates.
 
@@ -74,8 +41,6 @@ repository, and the user added to the mailing lists and ACLs.
 Add / remove the SRC member(s) github name from `security/README.md`
 to the appropriate list of committee members, according to the usernames
 alphabetical placing.
-
-If adding a SRC member, you will also need to remove the associate role:
 
 ```
 The initial Security Response Committee will consist of volunteers subscribed to the private [Kubernetes Security](https://groups.google.com/a/kubernetes.io/forum/#!forum/security) list. These are the people who have been involved in the initial discussion and volunteered:
@@ -271,7 +236,7 @@ New members must be manually added to the private channels on slack by someone
 who is already a member of those channels:
 
 1. `#SRC-private` for private SRC-only discussion
-2. `#security-release-team` for private discussions with the security-release-team and SRC associates
+2. `#security-release-team` for private discussions with the security-release-team
 
 Members who are stepping down must leave the channels themselves.
 
