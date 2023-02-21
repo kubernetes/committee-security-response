@@ -5,13 +5,12 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
 <!-- toc -->
 - [Security Response Committee (SRC)](#security-response-committee-src)
   - [Security Response Committee Membership](#security-response-committee-membership)
-    - [Joining](#joining)
-      - [SRC Lazy Consensus Selection](#src-lazy-consensus-selection)
+    - [Nomination](#nomination)
+    - [Member selection](#member-selection)
     - [Stepping Down](#stepping-down)
     - [Responsibilities](#responsibilities)
       - [Incident Commander](#incident-commander)
       - [Triage](#triage)
-      - [Associate](#associate)
     - [SIG Release Roles](#sig-release-roles)
 - [Disclosures](#disclosures)
   - [Private Disclosure Processes](#private-disclosure-processes)
@@ -23,6 +22,7 @@ Kubernetes is a large growing community of volunteers, users, and vendors. The K
 - [Private Distributors List](#private-distributors-list)
 - [Retrospective](#retrospective)
 - [Severity](#severity)
+- [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring)
 <!-- /toc -->
 
 ## Security Response Committee (SRC)
@@ -33,32 +33,58 @@ The [Security Response Committee (SRC)](README.md#security-response-committee-sr
 
 ### Security Response Committee Membership
 
-#### Joining
+New SRC members are nominated by current SRC members, and selected by the
+[steering committee](https://github.com/kubernetes/community/tree/master/committee-steering).
 
-New potential members to the SRC will first fill a minimum of a 3 month rotation in the [Associate](#Associate) role.
+The SRC is currently capped at 9 members.
 
-These individuals will be nominated by individuals on steering committee, SRC, or release manager lead and patch release manager.
+#### Nomination
 
-The SRC has a goal to have at least 7 members.
+New members are nominated to the SRC by current SRC members. If you are interested in joining the
+SRC, the best way to secure a nomination is through sustained participation and contributions in the
+Kubernetes security community.
 
 To encourage diversity members will also abide by a 1/2 maximal representation from any one company at any time. If representation changes due to job shifts or mergers, then members are encouraged to grow the team or replace themselves through mentoring new members. Being overlimit should not continue for longer than 12 months to give time to identify and mentor new members.
 
-##### SRC Lazy Consensus Selection
+A nomination should include:
+1. Relevant credentials, including Kubernetes and security experience
+2. Statement of support from the nominating SRC member(s): ~1-3 sentences of why this person is a good candidate.
+3. Statement of intent from the nominee: ~1-3 sentences of why they want to join the committee and are a good fit.
 
-Selection of new members from the associates will be done by lazy consensus, and defaults to the longest-standing associate.
+In the event that an SRC member has concerns with a nomination, they should privately reach out to
+the steering committee via steering-private@kubernetes.io.
 
-Selection of new associates is done by nomination and full consensus of current SRC members.
+Nominations will be collected into a private Google doc shared between the SRC and Steering.
+
+Nominations may be reused for new openings, but in that case both the SRC member and nominee should
+reconfirm (or update) their statements.
+
+#### Member selection
+
+After the nomination deadline is passed, nominations will be shared with the Steering Committee.
+Steering is encouraged to discuss the nominations in the next private monthly meeting, and reach out
+to the SRC with any questions.
+
+The final selection is made by discussion & lazy consensus, with a fallback to a vote.
+
+In the event that an individual is on both the SRC and Steering Committee, they will be expected to
+excuse themselves from the steering discussion & selection process (but may submit SRC nominations).
 
 #### Stepping Down
 
-Members may step down at anytime.
+Members may step down at anytime, and may nominate a replacement when they do.
 
 #### Responsibilities
 
 - Members should remain active and responsive, and participate in the [oncall rotation](src-oncall.md).
 - Members going on extended leave for up to 3 months (1-2 rotations) may pause their oncall duties, but should coordinate with other members to ensure the role is adequately staffed during the leave.
-- Longer leaves of absense should be discussed on a case-by-case basis, and may include an associate temporarily onboarding.
+- Longer leaves of absense should be discussed on a case-by-case basis.
 - Members of a role should remove any other members that have not communicated a leave of absence and either cannot be reached for more than 2 months or are not fulfilling their documented responsibilities for more than 2 months. This may be done through a super-majority vote of members.
+
+New members are *not* expected to join the oncall rotation immediately, but are expected to start
+learning the processes and ramping up. During that time, they are expected to complete a shadow and
+reverse shadow rotation. The ramp-up time does not need to be formalized, but 2-3 months should be a
+reasonable expectation.
 
 ##### Incident Commander
 
@@ -74,18 +100,6 @@ The incident commander defaults to the current oncall, but may be handed off to 
 The current oncall is responsible for triaging incoming vulnerability reports (both through the bug
 bounty and email). For more details on the triage process, see [oncall
 workflow](SRC-oncall.md).
-
-##### Associate
-
-A role for those wishing to join the SRC. They should not currently be a member
-of security@kubernetes.io.
-
-Their rotation will involve the following:
-
-- lead disclosures that are publicly disclosed or explicitly designated as low sensitivity (through
-    the security-disclosures-low tracker) (often done because of reporter request, a low CVSS score,
-    or design issue that requires long-term refactoring).
-- assisting in process improvements, bug bounty administration, audits, or other non-disclosure activities
 
 #### SIG Release Roles
 

@@ -13,14 +13,9 @@ The Security Response Committee (SRC) is responsible for triaging and handling t
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@redhat.com`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
 - Mo Khan (**[@enj](https://github.com/enj)**) `<i@monis.app>`
-- Tabitha Sable (**[@tabbysable](https://github.com/tabbysable)**) `<tabitha.c.sable@gmail.com>`
-- Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<timallclair@gmail.com>`
-
-[Associate](security-release-process.md#associate) members include:
-- Sam Fowler (**[@sfowl](https://github.com/sfowl)**) `<sfowler@redhat.com>`
-- Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
 - Rita Zhang (**[@ritazh](https://github.com/ritazh)**) `rita.z.zhang@gmail.com`
-- Pushkar Joglekar (**[@PushkarJ](https://github.com/PushkarJ)**) `pushkarj.at.work@gmail.com`
+- Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
+- Tabitha Sable (**[@tabbysable](https://github.com/tabbysable)**) `<tabitha.c.sable@gmail.com>`
 
 ### Contacting the SRC
 
