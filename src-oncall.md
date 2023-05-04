@@ -1,10 +1,21 @@
-# Security Response Committee Oncall
+# Security Response Committee On-call
 
-SRC Oncall is a business-hours only oncall. That means you are not expected to
+SRC On-call is a business-hours only on-call. That means you are not expected to
 respond to issues outside of your normal daily working hours or on weekends or
-holidays. If you are taking vacation or will be unable to perform your oncall
-duties, please swap oncalls or find coverage for that week. See [managing oncall
-rotation](#appendix-managing-oncall-rotation).
+holidays. If you are taking vacation or will be unable to perform your on-call
+duties, please swap on-calls or find coverage for that week. See [managing on-call
+rotation](#appendix-managing-on-call-rotation).
+
+There are two on-call rotations used by the SRC: the Primary SRC rotation and the
+Secondary SRC rotation. Each week a different person should be designated as
+on-call for each of these rotations. If you are the secondary on-call assignee,
+you should be available during your on-call shift to help the primary on-call
+assignee with tasks which require a second person. For example, reviewing PRs,
+reviewing drafts of communications, or providing opinions or ideas about issues
+being triaged (upon request of the primary on-call assignee).  All other duties
+outlined below are the responsability of the primary. The secondary is
+considered a resource for the primary and is not considered a backup for the
+primary.
 
 <!-- toc -->
 - [Responsibilities](#responsibilities)
@@ -13,7 +24,7 @@ rotation](#appendix-managing-oncall-rotation).
   - [security@kubernetes.io Triage](#securitykubernetesio-triage)
 - [Incident Response Workflow](#incident-response-workflow)
 - [Handoff](#handoff)
-- [Appendix: Managing Oncall Rotation](#appendix-managing-oncall-rotation)
+- [Appendix: Managing On-call Rotation](#appendix-managing-on-call-rotation)
   - [Adding the rotation to your calendar](#adding-the-rotation-to-your-calendar)
   - [Swapping shifts or adding coverage](#swapping-shifts-or-adding-coverage)
 <!-- /toc -->
@@ -181,29 +192,29 @@ If you would like to handoff incident command:
 2.  **Leave a comment** to dump any additional context and state you have on the
     issue. Make sure to list any open questions or decisions and any pending
     action items.
-3.  Reassign the issue to the next oncall.
+3.  Reassign the issue to the next on-call.
 
-Finally, reach out to the next oncall (email, slack, VC, your choice) to make
+Finally, reach out to the next on-call (email, slack, VC, your choice) to make
 sure they're aware of the handoff and to answer any questions. _Until they've
 explicitly acknowledged the handoff you are still the incident commander!_
 
-## Appendix: Managing Oncall Rotation
+## Appendix: Managing On-call Rotation
 
 ### Adding the rotation to your calendar
 
-1. Navigate to the SRC oncall rotation:
+1. Navigate to the SRC on-call rotation:
    https://kubernetes.app.opsgenie.com/settings/schedule/detail/f835cdef-8df9-4ddc-9a39-911cb9e521b5
 
 2. Click "Open calendar" (appears on hover), add to your calendar.
 
-![Oncall calendar](images/src-oncall-calendar.png)
+![On-call calendar](images/src-oncall-calendar.png)
 
 ### Swapping shifts or adding coverage
 
 0. Find someone to agree to swap shifts or cover for days you will be
    unavailable.
 
-1. Navigate to the SRC oncall rotation:
+1. Navigate to the SRC on-call rotation:
    https://kubernetes.app.opsgenie.com/settings/schedule/detail/f835cdef-8df9-4ddc-9a39-911cb9e521b5
 
 2. Click "Add override", fill in the appropriate details.
@@ -215,4 +226,4 @@ _Note: If you're swapping shifts, you'll need to do this twice, once for your
 shift and once for the shift you're swapping for._
 
 
-![Edit the oncall schedule](images/src-oncall-override.png)
+![Edit the on-call schedule](images/src-oncall-override.png)

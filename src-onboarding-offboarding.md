@@ -25,7 +25,7 @@ a github username **`jdoe`** and a company name of **ACME LTD**.
 
 ### Required file and access grant updates.
 
-Once the SRC has promoted an individual(s)  to a full SRC member, various
+When people join the SRC, various
 systems require updating. Likewise, should a SRC member leave the SRC - the
 reverse is required, with the user being removed from each system.
 
@@ -262,7 +262,6 @@ The following checklist can be pasted into an onboarding issue to track all the 
 - [ ] kubernetes/security PR:
   - [ ] README.md
   - [ ] OWNERS_ALIASES
-  - [ ] SECURITY_CONTACTS
 - [ ] kubernetes/k8s.io PR:
   - [ ] groups/security-response-committee/groups.yaml
     - `security@kubernetes.io`
