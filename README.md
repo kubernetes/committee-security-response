@@ -9,6 +9,7 @@ To report a vulnerability, please refer to https://kubernetes.io/security.
 The Security Response Committee (SRC) is responsible for triaging and handling the security issues for Kubernetes. Following are the current Security Response Committee members:
 
 - CJ Cullen (**[@cjcullen](https://github.com/cjcullen)**) `<cjcullen@google.com>`
+- Craig Ingram (**[@cji](https://github.com/cji)**) `<cjingram@google.com>`
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>` [4096R/0x1688ADC79BECDDAF]
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@redhat.com`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
