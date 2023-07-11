@@ -23,6 +23,9 @@ The following members of the Security Response Committee have completed CNA trai
 
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
+- Mo Khan (**[@enj](https://github.com/enj)**) `<i@monis.app>`
+- Rita Zhang (**[@ritazh](https://github.com/ritazh)**) `rita.z.zhang@gmail.com`
+- Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
 
 ## References
 
