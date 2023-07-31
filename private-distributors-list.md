@@ -6,6 +6,16 @@ security issues.
 
 ### Embargo Policy
 
+The patch files and any derived patched binaries are included in the embargo, 
+and must not be distributed or made available to external parties before the 
+public disclosure is made.
+
+However, a fully-hosted patched kube-apiserver can be deployed 
+prior to the embargo lift date if users do not have direct access to the binary and if the patch only applies to the kube-apiserver.
+
+Other fully-hosted patched components can also be deployed prior to the embargo 
+lift date only if all users with access to the components and/or
+clusters are internal to the Kubernetes distributor.
 
 Members of distributors-announce@kubernetes.io must share list information only
 within their teams, on a need-to-know basis to get the related issue fixed in
