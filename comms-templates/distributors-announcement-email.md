@@ -1,5 +1,7 @@
 _Use this email template for pre-disclosing security vulnerabilities to distributors-announce._
 
+_Note that distributors-announce@kubernetes.io has moderation enabled. When you send the email, remember to release the email from moderation queue._
+
 TO: `distributors-announce@kubernetes.io`
 
 SUBJECT: `[EMBARGOED] $CVE: $SUMMARY`
