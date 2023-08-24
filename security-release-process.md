@@ -150,8 +150,9 @@ our users.
 
 These steps should be completed within the first 24 hours of Disclosure.
 
-- The Fix Lead will work quickly to identify relevant engineers from the affected projects and packages and CC those engineers into the disclosure thread. This selected developers are the Fix Team. A best guess is to invite all assignees in the OWNERS file from the affected packages.
+- The Fix Lead will work quickly to identify relevant engineers and release managers from the affected projects and packages and CC those engineers into the disclosure thread. This selected developers are the Fix Team. A best guess is to invite all assignees in the OWNERS file from the affected packages.
 - The Fix Lead may get the Fix Team access to private security repos in the kubernetes-security GitHub org to develop the fix as required.
+- The Fix Lead should start by sharing a quick overview of the entire security release process as outlined in the [Disclosures](#disclosures) section in this document.
 
 Note: The kubernetes-security GitHub org is co-owned and viewable by the SRC and Kubernetes Release Managers. Management of the org is done by SIG Contributor Experience's [GitHub management subproject](https://git.k8s.io/community/github-management).
 
@@ -176,7 +177,7 @@ security aspects to private channels. The fix lead will make the determination
 whether there would be user harm in handling the fix publicly that outweighs the
 benefits of open engagement with the community.
 
-Critical and High severity vulnerability fixes will typically receive an out-of-band release. Medium and Low severity vulnerability fixes will be released as part of the next Kubernetes [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md).
+Critical and High severity vulnerability fixes will typically receive an out-of-band release. Medium and Low severity vulnerability fixes will be released as part of the next Kubernetes [patch release](https://github.com/kubernetes/website/blob/main/content/en/releases/patch-releases.md).
 
 Note: CVSS is convenient but imperfect. Ultimately, the Fix Lead has discretion
 on classifying the severity of a vulnerability.
@@ -227,9 +228,10 @@ Communications process:
     ([template](comms-templates/vulnerability-announcement-issue.md)) and prefixed with the
     associated CVE ID (if applicable)
   - Medium and Low severity vulnerability fixes that will be released as part of the next Kubernetes
-    [patch release](https://github.com/kubernetes/sig-release/blob/master/releases/patch-releases.md)
+    [patch release](https://github.com/kubernetes/website/blob/main/content/en/releases/patch-releases.md)
     will have the fix details included in the patch release notes. Any public announcement sent for
     these fixes will link to the release notes.
+  - For Kubernetes core components that are part of a Kubernetes release, provide the CVE feed yaml to the release team, https://github.com/kubernetes/sig-release/blob/master/release-engineering/role-handbooks/branch-manager.md#announcing-security-fixes
 
 ## Private Distributors List
 
