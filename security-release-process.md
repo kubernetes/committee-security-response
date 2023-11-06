@@ -161,7 +161,7 @@ Note: The kubernetes-security GitHub org is co-owned and viewable by the SRC and
 These steps should be completed within the 1-7 days of Disclosure.
 
 - The Fix Lead and the Fix Team will create a [CVSS](https://www.first.org/cvss/specification-document) score using the [CVSS Calculator](https://www.first.org/cvss/calculator/3.0). They will also use the [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring) to determine the effect and severity of the bug. The Fix Lead makes the final call on the calculated risk; it is better to move quickly than make the perfect assessment.
-- The Fix Lead will request a CVE from the [Kubernetes CVE Numbering Authority](cve-requests.md).
+- The Fix Lead will [Assign a CVE ID to the vulnerability from the CVE Numbering Authority](/cna-handbook.md#assign-a-cve-id-to-the-vulnerability).
 - The Fix Team will notify the Fix Lead that work on the fix branch is complete once there are LGTMs on all commits in the private repo from one or more relevant assignees in the relevant OWNERS file.
 
 If the CVSS score is under ~4.0
@@ -232,6 +232,7 @@ Communications process:
     will have the fix details included in the patch release notes. Any public announcement sent for
     these fixes will link to the release notes.
   - For Kubernetes core components that are part of a Kubernetes release, provide the CVE feed yaml to the release team, https://github.com/kubernetes/sig-release/blob/master/release-engineering/role-handbooks/branch-manager.md#announcing-security-fixes
+  - After public disclosure, [populate CVE details as soon as possible](/cna-handbook.md#populate-cve-details-after-public-disclosure)
 
 ## Private Distributors List
 

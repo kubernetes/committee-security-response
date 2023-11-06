@@ -21,11 +21,14 @@
 
 The following members of the Security Response Committee have completed CNA training and can request/assign/publish CVEs for the Kubernetes CNA:
 
+- CJ Cullen (**[@cjcullen](https://github.com/cjcullen)**) `<cjcullen@google.com>`
+- Craig Ingram (**[@cji](https://github.com/cji)**) `<cjingram@google.com>`
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
 - Mo Khan (**[@enj](https://github.com/enj)**) `<i@monis.app>`
 - Rita Zhang (**[@ritazh](https://github.com/ritazh)**) `rita.z.zhang@gmail.com`
 - Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
+- Tabitha Sable (**[@tabbysable](https://github.com/tabbysable)**) `<tabitha.c.sable@gmail.com>`
 
 ## References
 
@@ -96,55 +99,52 @@ To see help output on creating a new CNA admin user, you can run the following c
 docker run --env-file=env.txt -it --rm $USER/cvelib:latest user create -h
 ```
 
-### Assign a CVE ID to vulnerability
+### Assign a CVE ID to the vulnerability
 
 When a vulnerability report is received, follow the [CNA decision tree](https://cve.mitre.org/cve/cna/rules.html#Appendix_C)
 to determine if this is a valid vulnerability, in scope for the Kubernetes CNA, that has not yet been assigned a CVE ID,
 and if so, how many distinct vulnerabilities exist in the report.
+
+If a reserved ID is not available, run the following to reserve a new CVE ID or a batch of IDs:
+
+```bash
+docker run --env-file=env.txt -it --rm $USER/cvelib:latest reserve -h
+```
 
 Assign a reserved ID to the issue, and add at least the following information in the [tracking sheet]:
 * Date reserved
 * Description
 * Link to the tracking issue in https://github.com/kubernetes-security/security-disclosures/issues (created as part of [on-call workflow](src-oncall.md#incident-response-workflow))
 
-### Populate CVE details
+### Populate CVE Details after Public Disclosure 
 
-Ensure there is a Kubernetes github issue labeled `area/security` whose title contains the CVE ID.
+1. Ensure there is a Kubernetes github issue labeled `area/security` whose title contains the CVE ID.
 This will appear in the issue query linked from https://kubernetes.io/cve.
+1. Once a vulnerability is made public, populate the CVE details in https://github.com/CVEProject/cvelist. This should be done as soon as reasonably possible after the vulnerability is made public (ideally, O(days)).
+1. Generate the CVElist json file
 
-Once a vulnerability is made public, populate the CVE details in https://github.com/CVEProject/cvelist.
-This should be done as soon as reasonably possible after the vulnerability is made public (ideally, O(days)).
+    * See https://github.com/CVEProject/cvelist/blob/master/2023/2xxx/CVE-2023-2727.json as an example.
 
-See https://github.com/CVEProject/cvelist/pull/3176/files as an example.
+    * https://vulnogram.github.io/#editor is a useful tool for generating the CVE details, but should only be used once the vulnerability has been made public.
 
-https://vulnogram.github.io/#editor is a useful tool for editing the CVE details,
-but should only be used once the vulnerability has been made public.
+    Fill in or update the relevant fields, including:
+    * State: `PUBLIC`
+    * Assigner: `security@kubernetes.io`
+    * Affects: List historical minor versions affected and "prior to 1.x.y" patch versions affected
+    * Credits: The vulnerability reporter's name
+    * Description: `The Kubernetes <component> command/component in versions <affected versions> <vulnerability>`
+    * Impact: CVSS impact
+    * Problem type: Select a problem type from https://cwe.mitre.org/data/definitions/699.html if applicable
+    * References: Link to the Kubernetes github issue(s) (with type CONFIRM) and mailing list announcement (with type MLIST)
+    * Source: Link to the Kubernetes github issue(s) and indicate if it was discovered internally or externally
+    * Workaround: indicate workaround steps, if applicable
 
-Fill in or update the relevant fields, including:
-* State: `PUBLIC`
-* Assigner: `security@kubernetes.io`
-* Title: `Kubernetes <component> <vulnerability>`
-* Affects: List historical minor versions affected and "prior to 1.x.y" patch versions affected
-* Credit: The vulnerability reporter's name
-* Description: `The Kubernetes <component> command/component in versions <affected versions> <vulnerability>`
-* Impact: CVSS impact
-* Problem type: Select a problem type from https://cwe.mitre.org/data/definitions/699.html if applicable
-* References: Link to the Kubernetes github issue(s) (with type CONFIRM) and mailing list announcement (with type MLIST)
-* Source: Link to the Kubernetes github issue(s) and indicate if it was discovered internally or by a user
-* Workaround: indicate workaround steps, if applicable
-
-Commit, push to your branch, create a pull request to
-https://github.com/kubernetes-security/cvelist-public master, and link the pull request in the
-[tracking sheet]. Review any errors from the PR validation, and request a review from a CNA-approved
-SRC member.
-
-Once the PR to our fork has merged, a CNA approved member should open a PR to sync the upstream
-cvelist with our fork:
-https://github.com/CVEProject/cvelist/compare/master...kubernetes-security:master
-
-
-Once the upstream pull request is merged, indicate in the tracking sheet that the CVE has been
-populated.
+1. Once the cvelist json file is generated, request a review from a CNA-approved SRC member.
+1. Once the json file is reviewed, a CNA approved member should run the following to push the update
+    ```bash
+    docker run --env-file=env.txt -v ${PWD}/CVE-xxxx-xxxx.json:/tmp/CVE-xxxx-xxxx.json  -it --rm $USER/cvelib:latest publish CVE-xxxx-xxxx  -f /tmp/CVE-xxxx-xxxx.json
+    ```
+1. Once the cvelist json file in https://github.com/CVEProject/cvelist is updated, indicate in the [tracking sheet] that the CVE has been populated.
 
 ### Reject unused CVEs
 
@@ -152,8 +152,13 @@ Once a calendar year has completed, all untriaged reports from that year have be
 and no new CVE assignments for that year will be made, update any reserved but unassigned CVE IDs
 for that calendar year to indicate they were rejected and unused.
 
-1. Update the CVE details in github (see https://github.com/CVEProject/cvelist/pull/3175 as an example)
-2. Update the [tracking sheet] to indicate those CVEs were rejected (see CVE-2019-11256 through CVE-2019-11267 as an example)
+1. Run the following:
+
+    ```bash
+    docker run --env-file=env.txt -it --rm $USER/cvelib:latest reject -h
+    ```
+
+1. Update the [tracking sheet] to indicate those CVEs were rejected (see CVE-2019-11256 through CVE-2019-11267 as an example)
 
 ## Uncommon tasks
 
