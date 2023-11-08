@@ -225,8 +225,8 @@ Communications process:
   - [discuss.kubernetes.io](https://discuss.kubernetes.io/c/announcements) forum (this should be
     posted automatically using the general announcement email template)
   - Tracking issue opened in https://github.com/kubernetes/kubernetes/issues
-    ([template](comms-templates/vulnerability-announcement-issue.md)) and prefixed with the
-    associated CVE ID (if applicable)
+    ([template](comms-templates/vulnerability-announcement-issue.md)) and prefixed with the 
+    associated CVE ID (if applicable). Add `/label official-cve-feed` so it will be part of https://kubernetes.io/docs/reference/issues-security/official-cve-feed/. Close the issue after the announcement is made. 
   - Medium and Low severity vulnerability fixes that will be released as part of the next Kubernetes
     [patch release](https://github.com/kubernetes/website/blob/main/content/en/releases/patch-releases.md)
     will have the fix details included in the patch release notes. Any public announcement sent for
