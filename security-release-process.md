@@ -227,6 +227,7 @@ Communications process:
   - Tracking issue opened in https://github.com/kubernetes/kubernetes/issues
     ([template](comms-templates/vulnerability-announcement-issue.md)) and prefixed with the
     associated CVE ID (if applicable)
+      - Once all communications are sent, fixes are released, and the CVE data has been populated, close out the public tracking issue. 
   - Medium and Low severity vulnerability fixes that will be released as part of the next Kubernetes
     [patch release](https://github.com/kubernetes/website/blob/main/content/en/releases/patch-releases.md)
     will have the fix details included in the patch release notes. Any public announcement sent for
