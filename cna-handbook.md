@@ -135,7 +135,7 @@ This will appear in the issue query linked from https://kubernetes.io/cve.
     * Description: `The Kubernetes <component> command/component in versions <affected versions> <vulnerability>`
     * Impact: CVSS impact
     * Problem type: Select a problem type from https://cwe.mitre.org/data/definitions/699.html if applicable
-    * References: Link to the Kubernetes github issue(s) (with type CONFIRM) and mailing list announcement (with type MLIST)
+    * References: Link to the Kubernetes github issue(s) (with type `issue-tracking`) and mailing list announcement (with type `mailing-list`)
     * Source: Link to the Kubernetes github issue(s) and indicate if it was discovered internally or externally
     * Work around: indicate workaround steps, if applicable
 
