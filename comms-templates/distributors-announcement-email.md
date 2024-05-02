@@ -10,7 +10,7 @@ SUBJECT: `[EMBARGOED] $CVE: $SUMMARY`
 
 ### EMBARGOED
 
-The information contained in this email is **[under embargo](https://github.com/kubernetes/security/blob/master/private-distributors-list.md#embargo-policy)** until the scheduled public disclosure is sent on **$DATE. The exact time may be at OR after 9AM PT**.
+The information contained in this email is **[under embargo](https://github.com/kubernetes/security/blob/master/private-distributors-list.md#embargo-policy)** until the public disclosure is sent. The disclosure is scheduled to be sent on $DATE at or after 9AM PT.
 
 _Additional details on the embargo conditions._
 - _If a patch is provided, can it be deployed?_
