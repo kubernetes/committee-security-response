@@ -4,6 +4,7 @@ import os
 import time
 
 username = os.environ['GH_USERNAME']
+# When creating github personal access token, be sure to check all permissions under the repo scope to access private repos
 github_token = os.environ['GH_TOKEN']
 
 api = GhApi(owner='kubernetes-security', repo='kubernetes',token=github_token)
