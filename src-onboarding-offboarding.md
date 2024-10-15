@@ -238,7 +238,11 @@ who is already a member of those channels:
 1. `#SRC-private` for private SRC-only discussion
 2. `#security-release-team` for private discussions with the security-release-team
 
-Members who are stepping down must leave the channels themselves.
+Members who are stepping down must leave the channels themselves. 
+
+Finally, ask a `#slack-admins` member to add the new SRC member to the list of people who can post in `#announcements`. 
+
+If a member is stepping down, we must let the admins know to remove the `#announcements` permission. 
 
 #### Calendar
 
