@@ -138,7 +138,7 @@ https://github.com/orgs/kubernetes/teams/security-response-committee
 ####  Add/remove from HackerOne
 
 To add or remove members from the Kubernetes HackerOne project, navigate to
-https://hackerone.com/kubernetes/team_members
+https://hackerone.com/organizations/linux_foundation/settings/users
 
 Click `Remove` next to a member to remove.
 
@@ -149,6 +149,9 @@ We also request that new members enable 2-factor auth. Once they've accepted the
 invitation, you can verify the status in the `2FA` column on the user management
 page.
 
+After verifying 2FA status, make the new member an "Organization Administrator"
+by selecting "Edit user" from the context menu, then enabling "Organization
+Administrator".
 
 ####  Add/remove from OpsGenie rotation
 
