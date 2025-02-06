@@ -36,7 +36,7 @@ The [Security Response Committee (SRC)](README.md#security-response-committee-sr
 New SRC members are nominated by current SRC members, and selected by the
 [steering committee](https://github.com/kubernetes/community/tree/master/committee-steering).
 
-The SRC is currently capped at 9 members.
+The SRC is currently capped at 10 members.
 
 #### Nomination
 
