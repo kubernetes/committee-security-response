@@ -36,7 +36,7 @@ CNA documents are hosted by MITRE at https://cve.mitre.org/about/documents.html#
 
 * CNA onboarding guides: https://cveproject.github.io/docs/cna/onboarding/index.html
     * Also available in video form: https://www.youtube.com/playlist?list=PLWfD9RQVdJ6c4eMkdqbOKqF7zPCqXkgX3
-* CNA Rules: https://cve.mitre.org/cve/cna/rules.html
+* CNA Rules: https://www.cve.org/ResourcesSupport/AllResources/CNARules
 
 A walkthrough of this handbook is also available in [video form](https://youtu.be/pcmAaEP7HD4).
 
