@@ -184,6 +184,12 @@ straightforward, non-disruptive mitigation, the Fix Lead may choose to disclose
 the vulnerability before a fix is developed if they determine that users would
 be better off being warned against a specific interaction.
 
+### Low CVEs that can Skip Private Disclosures
+Sometimes a Low CVE may not require private disclosures, Fix lead should facilitate:
+- Code owner to submit public PR and cherrypick PRs any time before the next patch releases deadline. PRs should not mention the CVE, only the fix.
+- BEFORE the next patch releases are out, Fix lead to provide the CVE feed yaml to the release team.
+- AFTER the next patch releases are out, Fix lead to follow the `Communications process` listed below under "Fix Release Day" to open a public issue and make all the public announcements.
+
 ### Fix Disclosure Process
 
 With the Fix Development underway the Fix Lead needs to come up with an overall communication plan for the wider community. This Disclosure process should begin after the Fix Team has developed a Fix or mitigation so that a realistic timeline can be communicated to users. Emergency releases for critical and high severity issues or fixes for issues already made public may affect the below timelines for how quickly or far in advance notifications will occur.
