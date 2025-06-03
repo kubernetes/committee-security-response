@@ -157,7 +157,9 @@ These steps should be completed within the 1-7 days of Disclosure.
 
 - The Fix Lead and the Fix Team will create a [CVSS](https://www.first.org/cvss/specification-document) score using the [CVSS Calculator](https://www.first.org/cvss/calculator/3.0). They will also use the [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring) to determine the effect and severity of the bug. The Fix Lead makes the final call on the calculated risk; it is better to move quickly than make the perfect assessment.
 - The Fix Lead will [Assign a CVE ID to the vulnerability from the CVE Numbering Authority](/cna-handbook.md#assign-a-cve-id-to-the-vulnerability).
-- The Fix Team will notify the Fix Lead that work on the fix branch is complete once there are LGTMs on all commits in the private repo from one or more relevant assignees in the relevant OWNERS file.
+- The Fix Lead will sync the master branch and active release branches from the public repo to the private security repo in the kubernetes-security GitHub org using this script: [sync-repo.sh](tools/sync-repo.sh)
+- The Fix Team will notify the Fix Lead that work on the master and release branches is complete once there are LGTMs on all commits in the private repo from one or more relevant assignees in the relevant OWNERS file.
+- These pull requests should not be merged on the private kubernetes-security GitHub repo. The Fix Lead should reference these PRs for embargoed patch development and cherry-picking to the public repo on the fix release day.
 
 If the CVSS score is under ~4.0
 ([a low severity score](https://www.first.org/cvss/specification-document#i5))
@@ -197,6 +199,7 @@ With the Fix Development underway the Fix Lead needs to come up with an overall 
 **Advance Vulnerability Disclosure to Private Distributors List** (Completed within 1-4 weeks prior to public disclosure):
 
 - The [Private Distributors List](#private-distributors-list) will be given advance notification of any vulnerability that is assigned a CVE, at least 7 days before the planned public disclosure date. The notification will include all information that can be reasonably provided at the time of the notification. This may include patches or links to PRs, proofs of concept or instructions to reproduce the vulnerability, known mitigations, and timelines for public disclosure. When applicable, patches for all supported versions should be included. Distributors should read about the [Private Distributors List](#private-distributors-list) to find out the requirements for being added to this list.
+- The following script can be used to generate patch files from the kubernetes-security release branch PRs which were previously approved (but not merged): [patchformat.py](tools/patchformat.py). The patch files from each supported release branch should be included in a zipped file in the private distributor notification.
 - **What if a vendor breaks embargo?** The SRC will assess the damage. The Fix Lead will make the call to release earlier or continue with the plan. When in doubt push forward and go public ASAP.
 
 **Fix Release Day**
