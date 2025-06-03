@@ -157,7 +157,30 @@ These steps should be completed within the 1-7 days of Disclosure.
 
 - The Fix Lead and the Fix Team will create a [CVSS](https://www.first.org/cvss/specification-document) score using the [CVSS Calculator](https://www.first.org/cvss/calculator/3.0). They will also use the [Severity Thresholds - How We Do Vulnerability Scoring](#severity-thresholds---how-we-do-vulnerability-scoring) to determine the effect and severity of the bug. The Fix Lead makes the final call on the calculated risk; it is better to move quickly than make the perfect assessment.
 - The Fix Lead will [Assign a CVE ID to the vulnerability from the CVE Numbering Authority](/cna-handbook.md#assign-a-cve-id-to-the-vulnerability).
-- The Fix Team will notify the Fix Lead that work on the fix branch is complete once there are LGTMs on all commits in the private repo from one or more relevant assignees in the relevant OWNERS file.
+- The Fix Lead will sync the master branch and active release branches from the public repo to the private security repo in the kubernetes-security GitHub org.
+- The Fix Team will notify the Fix Lead that work on the master and release branches is complete once there are LGTMs on all commits in the private repo from one or more relevant assignees in the relevant OWNERS file.
+- These pull requests should not be merged on the private kubernetes-security GitHub repo. The Fix Lead should reference these PRs for embargoed patch development and cherry-picking to the public repo on the fix release day. 
+
+**Sync kubernetes-security from public repositories**
+```
+# Add kubernetes-security repo as a remote
+% git remote add security https://github.com/kubernetes-security/kubernetes.git
+% git fetch security
+% git fetch upstream
+
+# Sync master branch
+% git pull upstream master
+% git push security master
+
+# Sync a release branch that already exists as a remote branch
+% git checkout upstream/release-1.33
+% git push security upstream/release-1.33:release-1.33
+
+# Sync a release branch that does not currently exist as a remote branch
+% git checkout upstream/release-1.34
+% git checkout -b temp-branch
+% git push security temp-branch:release-1.34
+```
 
 If the CVSS score is under ~4.0
 ([a low severity score](https://www.first.org/cvss/specification-document#i5))
