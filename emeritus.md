@@ -7,3 +7,4 @@ Emeritus committee members:
 - Swamy Shivaganga Nagaraju (**[@swamymsft](https://github.com/swamymsft)**) `<gaswamy@microsoft.com>`
 - Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<timallclair@gmail.com>`
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@protonmail.com`
+- Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
