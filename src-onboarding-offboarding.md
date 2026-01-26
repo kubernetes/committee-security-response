@@ -8,7 +8,7 @@ a github username **`jdoe`** and a company name of **ACME LTD**.
 
 <!-- toc -->
 - [Required file and access grant updates.](#required-file-and-access-grant-updates)
-  - [kubernetes/security repository](#kubernetessecurity-repository)
+  - [kubernetes/committee-security-response repository](#kubernetessecurity-repository)
   - [kubernetes/k8s.io repository](#kubernetesk8sio-repository)
   - [kubernetes/community repository](#kubernetescommunity-repository)
   - [kubernetes/org repository](#kubernetesorg-repository)
@@ -29,16 +29,16 @@ Once the SRC has promoted an individual(s)  to a full SRC member, various
 systems require updating. Likewise, should a SRC member leave the SRC - the
 reverse is required, with the user being removed from each system.
 
-#### kubernetes/security repository
+#### kubernetes/committee-security-response repository
 
-All SRC member discussion & approval must happen on the `kubernetes/security`
+All SRC member discussion & approval must happen on the `kubernetes/committee-security-response`
 repository first and only once approved by means of the pull request being
 merged, should pull requests be approved / merged in the `kubernetes/community`
 repository, and the user added to the mailing lists and ACLs.
 
-##### file: https://github.com/kubernetes/security/blob/master/README.md
+##### file: https://github.com/kubernetes/committee-security-response/blob/master/README.md
 
-Add / remove the SRC member(s) github name from `security/README.md`
+Add / remove the SRC member(s) github name from `committee-security-response/README.md`
 to the appropriate list of committee members, according to the usernames
 alphabetical placing.
 
@@ -50,9 +50,9 @@ The initial Security Response Committee will consist of volunteers subscribed to
 
 If removing a SRC member, move them to the list of emeritus members.
 
-##### file: https://github.com/kubernetes/security/blob/master/OWNERS_ALIASES
+##### file: https://github.com/kubernetes/committee-security-response/blob/master/OWNERS_ALIASES
 
-Add / remove the SRC member(s) github name from `security/OWNERS_ALIASES` to the
+Add / remove the SRC member(s) github name from `committee-security-response/OWNERS_ALIASES` to the
 existing `security-response-committee` field, according to the usernames
 alphabetical placing:
 
@@ -259,14 +259,14 @@ Update the Google calendar entries to add or remove the member:
 Update the sharing settings for the following docs:
 
 - "SRC Monthly Agenda & Notes" (owner: timallclair@gmail.com)
-- "Kubernetes CNA Tracker" (owner: timallclair@gmail.com) - Only for [CNA trained members](https://github.com/kubernetes/security/blob/master/cna-handbook.md)
+- "Kubernetes CNA Tracker" (owner: timallclair@gmail.com) - Only for [CNA trained members](https://github.com/kubernetes/committee-security-response/blob/master/cna-handbook.md)
 
 ### Checklist
 
 The following checklist can be pasted into an onboarding issue to track all the steps that need to be taken:
 
 ```
-- [ ] kubernetes/security PR:
+- [ ] kubernetes/committee-security-response PR:
   - [ ] README.md
   - [ ] OWNERS_ALIASES
   - [ ] SECURITY_CONTACTS
