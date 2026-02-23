@@ -8,3 +8,4 @@ Emeritus committee members:
 - Tim Allclair (**[@tallclair](https://github.com/tallclair)**) `<timallclair@gmail.com>`
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@protonmail.com`
 - Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
+- Craig Ingram (**[@cji](https://github.com/cji)**) `<cji@linux.com>`
