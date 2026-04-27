@@ -22,11 +22,9 @@
 The following members of the Security Response Committee have completed CNA training and can request/assign/publish CVEs for the Kubernetes CNA:
 
 - CJ Cullen (**[@cjcullen](https://github.com/cjcullen)**) `<cjcullen@google.com>`
-- Craig Ingram (**[@cji](https://github.com/cji)**) `<cjingram@google.com>`
 - Joel Smith (**[@joelsmith](https://github.com/joelsmith)**) `<joelsmith@redhat.com>`
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
 - Mo Khan (**[@enj](https://github.com/enj)**) `<i@monis.app>`
-- Rita Zhang (**[@ritazh](https://github.com/ritazh)**) `<ritazh@microsoft.com>`
 - Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
 - Tabitha Sable (**[@tabbysable](https://github.com/tabbysable)**) `<tabitha.c.sable@gmail.com>`
 
