@@ -9,3 +9,4 @@ Emeritus committee members:
 - Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**) `lhinds@protonmail.com`
 - Sri Saran Balaji (**[@SaranBalaji90](https://github.com/SaranBalaji90)**) `<srajakum@amazon.com>`
 - Craig Ingram (**[@cji](https://github.com/cji)**) `<cji@linux.com>`
+- Rita Zhang (**[@ritazh](https://github.com/ritazh)**) `<ritazh@microsoft.com>`

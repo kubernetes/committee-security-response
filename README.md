@@ -14,7 +14,6 @@ The Security Response Committee (SRC) is responsible for triaging and handling t
 - Micah Hausler (**[@micahhausler](https://github.com/micahhausler)**) `<mhausler@amazon.com>`
 - Mo Khan (**[@enj](https://github.com/enj)**) `<i@monis.app>`
 - Nathan Herz (**[@natherz97](https://github.com/natherz97)**) `<nathan.herz97@gmail.com>`
-- Rita Zhang (**[@ritazh](https://github.com/ritazh)**) `<ritazh@microsoft.com>`
 - Standa Láznička (**[@stlaz](https://github.com/stlaz)**) `<slznika@microsoft.com>`
 - Tabitha Sable (**[@tabbysable](https://github.com/tabbysable)**) `<tabitha.c.sable@gmail.com>`
 - Vinayak Goyal (**[@vinayakankugoyal](https://github.com/vinayakankugoyal)**) `<vinayakankugoyal@gmail.com>`
