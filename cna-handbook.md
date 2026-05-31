@@ -129,6 +129,7 @@ This will appear in the issue query linked from https://kubernetes.io/cve.
     * State: `PUBLIC`
     * Assigner: `security@kubernetes.io`
     * Affects: List historical minor versions affected and "prior to 1.x.y" patch versions affected
+      * If a CVE affects all versions, indicate that with a semver range that begins at `0` and ends at `*`
     * Credits: The vulnerability reporter's name
     * Description: `The Kubernetes <component> command/component in versions <affected versions> <vulnerability>`
     * Impact: CVSS impact
@@ -142,7 +143,7 @@ This will appear in the issue query linked from https://kubernetes.io/cve.
     ```bash
     docker run --env-file=env.txt -v ${PWD}/CVE-xxxx-xxxx.json:/tmp/CVE-xxxx-xxxx.json  -it --rm $USER/cvelib:latest publish CVE-xxxx-xxxx  -f /tmp/CVE-xxxx-xxxx.json
     ```
-1. Once the cvelist json file in https://github.com/CVEProject/cvelist is updated, indicate in the [tracking sheet] that the CVE has been populated.
+1. Once the cve has been published via the cve api, indicate in the [tracking sheet] that the CVE has been populated.
 
 ### Reject unused CVEs
 
