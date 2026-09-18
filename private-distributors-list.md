@@ -70,8 +70,7 @@ distribution should:
 5. Be a participant and active contributor in the community.
 6. Accept the [Embargo Policy](#embargo-policy) that is outlined above.
 7. Be willing to [contribute back](#contributing-back) as outlined above.
-8. Have someone already on the list vouch for the person requesting membership
-   on behalf of your distribution.
+8. Have someone already on [this list](https://github.com/kubernetes/k8s.io/blob/61f888fdfcb8dbe1aeadea8574eada5c9a995538/groups/committee-security-response/groups.yaml#L37) to vouch for the person requesting membership on behalf of your distribution.
 
 [conformance]: https://www.cncf.io/certification/software-conformance/
 

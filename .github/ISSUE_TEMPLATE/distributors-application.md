@@ -27,4 +27,4 @@ meeting the membership criteria.
 **7. Be willing to contribute back.**
 <!-- Per https://github.com/kubernetes/security/blob/master/private-distributors-list.md#contributing-back -->
 
-**8. Have someone already on the list vouch for the person requesting membership on behalf of your distribution.**
+**8. Have someone already on [this list](https://github.com/kubernetes/k8s.io/blob/61f888fdfcb8dbe1aeadea8574eada5c9a995538/groups/committee-security-response/groups.yaml#L37) to vouch for the person requesting membership on behalf of your distribution.**
